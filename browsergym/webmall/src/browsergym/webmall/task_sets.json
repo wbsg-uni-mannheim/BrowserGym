@@ -15,7 +15,7 @@
                 {
                     "id": "Webmall_Single_Product_Search_Task1",
                     "category": "Specific_Product",
-                    "instruction": "Please find an offer for AMD Ryzen 9 5900X.",
+                    "instruction": "Please find an offer for AMD Ryzen 9 5900X and put it into the shopping cart.",
                     "motivation": "Evaluate the ability of the agent to navigate to different shops until it has found an offer for a specific product. The product is offered by half of the shops.",
                     "relevant_offers": {
                         "shop1": [
@@ -94,9 +94,12 @@
                         "shop4": []
                     },
                     "correct_answer": {
-                        "type": "URL",
+                        "type": "HTML",
                         "answers": [
-                            "http://localhost/product/amd-ryzen-9-5900x-3-7-ghz-12-kerne-24-threads/"
+                            {
+                                "element_class": "woocommerce-message",
+                                "answer": "“AMD Ryzen 9 5900X – 3.7 GHz – 12 Kerne – 24 Threads” has been added to your cart."
+                            }
                         ]
                     }
                 }
