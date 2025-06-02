@@ -53,7 +53,7 @@ class HighLevelActionSetArgs(DataClassJsonMixin):
 
 
 BenchmarkBackend = Literal[
-    "miniwob", "webarena", "visualwebarena", "workarena", "assistantbench", "weblinx", "webmall"
+    "miniwob", "webarena", "visualwebarena", "workarena", "assistantbench", "weblinx"
 ]
 
 

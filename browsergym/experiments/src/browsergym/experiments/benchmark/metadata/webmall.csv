@@ -1,2 +1,0 @@
-task_name,requires_reset,sites,eval_types,task_id,browsergym_split,depends_on
-webmall.Webmall_Single_Product_Search_Task1,False,shopping_admin,string_match,0,train,
