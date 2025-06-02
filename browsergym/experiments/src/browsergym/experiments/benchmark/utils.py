@@ -6,7 +6,6 @@ import typing
 from typing import Literal
 
 import numpy as np
-
 from browsergym.experiments.loop import SEED_MAX, EnvArgs
 
 logger = logging.getLogger(__name__)
@@ -46,7 +45,11 @@ def make_env_args_list_from_workarena_curriculum(
 
 
 def make_env_args_list_from_repeat_tasks(
-    task_list: list[str], max_steps: int, n_repeats: int, seeds_rng: np.random.RandomState
+    task_list: list[str],
+    max_steps: int,
+    n_repeats: int,
+    seeds_rng: np.random.RandomState,
+    viewport=None,
 ):
     """
     Generates a list of `len(task_list)` time `n_repeats` environments arguments, using randomly generated seeds.
@@ -62,7 +65,7 @@ def make_env_args_list_from_repeat_tasks(
                     headless=True,
                     record_video=False,
                     wait_for_user_message=False,
-                    viewport=None,
+                    viewport=viewport,
                     slow_mo=None,
                     storage_state=None,
                     task_kwargs=None,
@@ -73,7 +76,7 @@ def make_env_args_list_from_repeat_tasks(
 
 
 def make_env_args_list_from_fixed_seeds(
-    task_list: list[str], max_steps: int, fixed_seeds: list[int]
+    task_list: list[str], max_steps: int, fixed_seeds: list[int], n_repeats: int = 1
 ):
     """
     Generates a list of `len(task_list)` time `n_repeats` environments arguments, using randomly generated seeds.
@@ -81,20 +84,21 @@ def make_env_args_list_from_fixed_seeds(
     env_args_list = []
     for task in task_list:
         for seed in fixed_seeds:
-            env_args_list.append(
-                EnvArgs(
-                    task_name=task,
-                    task_seed=int(seed),
-                    max_steps=max_steps,
-                    headless=True,
-                    record_video=False,
-                    wait_for_user_message=False,
-                    viewport=None,
-                    slow_mo=None,
-                    storage_state=None,
-                    task_kwargs=None,
+            for _ in range(n_repeats):
+                env_args_list.append(
+                    EnvArgs(
+                        task_name=task,
+                        task_seed=int(seed),
+                        max_steps=max_steps,
+                        headless=True,
+                        record_video=False,
+                        wait_for_user_message=False,
+                        viewport=None,
+                        slow_mo=None,
+                        storage_state=None,
+                        task_kwargs=None,
+                    )
                 )
-            )
 
     return env_args_list
 
@@ -225,6 +229,30 @@ def massage_tasks(task_ids: list[str], max_retries: int = 1, timeout: int = 60):
                 )
 
 
+def run_massage(outcome_queue: mp.Queue, task_id: str):
+    import gymnasium as gym
+
+    gym_id = f"browsergym/{task_id}"
+    env = gym.make(gym_id)
+    no_action = "noop()"
+    # check if action space exists and is compatible with "noop()"
+    try:
+        env.unwrapped.action_mapping(no_action)
+    except:
+        no_action = ""  # fallback plan
+    # run massage
+    try:
+        env.reset()  # task setup
+        env.step(no_action)  # task validation
+        env.step(no_action)  # task validation again
+        outcome = "success", None
+    except Exception as e:
+        outcome = "exception", traceback.format_exception(e)
+    finally:
+        env.close()
+        outcome_queue.put(outcome)
+
+
 def massage_task_within_subprocess(
     task_id: str, timeout: int, kill_timeout: int = 10
 ) -> typing.Tuple[str, str]:
@@ -236,31 +264,8 @@ def massage_task_within_subprocess(
       - err_msg: error message if any, or None.
     """
 
-    def run_massage(outcome_queue: mp.Queue):
-        import gymnasium as gym
-
-        gym_id = f"browsergym/{task_id}"
-        env = gym.make(gym_id)
-        no_action = "noop()"
-        # check if action space exists and is compatible with "noop()"
-        try:
-            env.unwrapped.action_mapping(no_action)
-        except:
-            no_action = ""  # fallback plan
-        # run massage
-        try:
-            env.reset()  # task setup
-            env.step(no_action)  # task validation
-            env.step(no_action)  # task validation again
-            outcome = "success", None
-        except Exception as e:
-            outcome = "exception", traceback.format_exception(e)
-        finally:
-            env.close()
-            outcome_queue.put(outcome)
-
     queue = mp.Queue()
-    process = mp.Process(target=run_massage, args=(queue,))
+    process = mp.Process(target=run_massage, args=(queue, task_id))
     process.start()
     process.join(timeout=timeout)
 
