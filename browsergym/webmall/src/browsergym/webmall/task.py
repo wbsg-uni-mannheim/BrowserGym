@@ -55,27 +55,10 @@ class WebMallTask(AbstractBrowserTask):
 
         self.task_config = _get_task(self.task_sets, task_id.split(".")[1])
 
-        # For checkout tasks, inject dummy user and product url
+        # For checkout tasks, inject product url
         if self.task_config["category"] == "Checkout":
-            # Load dummy_user.json
-            with open(os.path.join(os.path.dirname(__file__), "dummy_user.json"), "r") as f:
-                dummy_user = json.load(f)
-
-            # Replace full sections directly
-            self.task_config["user_details"] = dummy_user["user_details"]
-            self.task_config["payment_info"] = dummy_user["payment_info"]
-
-            # Collect all key-value pairs from dummy_user for placeholder replacement
-            replacements = []
-            for section in dummy_user.values():  # user_details and payment_info
-                for key, value in section.items():
-                    replacements.append(("{{" + key + "}}", str(value)))  # e.g. "{{user}}", "Jessica Morgan"
-
-            # Replace placeholders like {{user}}, {{card_number}}, etc.
-            self.task_config = _replace_placeholders(self.task_config, replacements)
-
             # Replace {{product_url}} in task instruction
-            self.task_config = _replace_placeholders(self.task_config, [("{{product_url}}", self.task_config["correct_answer"]["answers"][0]["answer1"])])
+            self.task_config = _replace_placeholders(self.task_config, [("{{product_url}}", self.task_config["correct_answer"]["answers"][0])])
 
         self.checklist = Checklist(self.task_config, task_id=self.task_id, urls=self.urls)
     

@@ -28,22 +28,21 @@ class Checklist:
 
         # --- Step 2: Process answer checkpoints ---
         checkout_answer = None
-        for answer in answers:
-            for key, value in answer.items():
-                if answer_type == "checkout":
-                    # Add checkout checkpoint to correct answer group
-                    answer_cps.append(CheckoutCheckpoint(
-                        id=key,
-                        value=value,
-                        type="checkout",
-                        user_details=task_config.get("user_details"),
-                        payment_info=task_config.get("payment_info"),
-                    ))
-                    checkout_answer = value
-                    # Cart goes into product_page_cps
-                    cart_cps.append(Checkpoint(id=key, value=value, type="cart"))
-                else:
-                    answer_cps.append(Checkpoint(id=key, value=value, type=answer_type))
+        for i, answer in enumerate(answers, 1):
+            if answer_type == "checkout":
+                # Add checkout checkpoint to correct answer group
+                answer_cps.append(CheckoutCheckpoint(
+                    id="answer" + str(i),
+                    value=answer,
+                    type="checkout",
+                    user_details=task_config.get("user_details"),
+                    payment_info=task_config.get("payment_info"),
+                ))
+                checkout_answer = answer
+                # Cart goes into product_page_cps
+                cart_cps.append(Checkpoint(id="answer" + str(i), value=answer, type="cart"))
+            else:
+                answer_cps.append(Checkpoint(id="answer" + str(i), value=answer, type=answer_type))
 
         # --- Step 3: Normalize weights ---
 
