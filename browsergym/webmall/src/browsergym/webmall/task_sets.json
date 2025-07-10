@@ -15535,5 +15535,1484 @@
         }
       }
     ]
+  },
+  {
+    "id": "WEBMALL_END_TO_END_V1",
+    "name": "Web Mall Agent Benchmark: Find and Order",
+    "date": "2025-07-09",
+    "description": "Evaluate the agent’s ability to complete the whole webshopping process, including searching a product between multiple shops and finally making an order.",
+    "authors": [
+      "j-yuya",
+      "LucaLuca1124"
+    ],
+    "license": "Apache 2.0",
+    "tasks": [
+      {
+        "id": "Webmall_EndToEnd_Task1",
+        "category": "FindAndOrder",
+        "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n<task>\\nFind the cheapest offer for the  Asrock B550 PHANTOM GAMING 4, add it to the shopping cart and complete the checkout process with this item. Add the product on page {{product_url}} to the shopping cart and complete the checkout process. Pay via credit card using the following information: Address: {{name}}, {{email}}, {{street}}, {{house_number}}, {{zip}}, {{state}}, {{country}}, Credit card number: {{card}}, CVV: {{cvv}}, expiry date: {{expiry_date}}.\\n</task>",
+        "motivation": "Assess the agent's ability to handle the complexity of a whole end-to-end webshopping process.",
+        "relevant_offers": {
+          "shop1": [],
+          "shop2": [],
+          "shop3": [
+            {
+              "webmall_id": "kovendor.co.uk_284",
+              "name": "Asrock B550 PHANTOM GAMING 4, AMD B550, AM4, ATX, 4 DDR4, HDMI, XFire, PCIe4, M.2",
+              "description": "<p>Asrock B550 Phantom Gaming 4 motherboard supports AMD AM4 socket, features ATX form factor, and offers 4 DDR4 RAM slots with a maximum memory of 128GB.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Motherboards",
+              "cluster_id": 878725,
+              "name_normalized": "Asrock B550 Phantom Gaming 4 Motherboard",
+              "product_url": "{{URL_3}}/product/asrock-b550-phantom-gaming-4-amd-b550-am4-atx-4-ddr4-hdmi-xfire-pcie4-m-2",
+              "product_id": 1691,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 43,
+              "woocommerce_id": 1057
+            }
+          ],
+          "shop4": []
+        },
+        "simlar_but_irrelevant_offers": {
+          "shop1": [],
+          "shop2": [],
+          "shop3": [],
+          "shop4": []
+        },
+        "correct_answer": {
+          "type": "checkout",
+          "answers": [
+            "{{URL_3}}/product/asrock-b550-phantom-gaming-4-amd-b550-am4-atx-4-ddr4-hdmi-xfire-pcie4-m-2"
+          ]
+        },
+        "user_details": {
+          "name": "Jessica Morgan",
+          "street": "Maple Avenue",
+          "house_number": "742",
+          "zip": "60614",
+          "state": "IL",
+          "country": "USA",
+          "email": "jessica.morgan@yahoo.com"
+        },
+        "payment_info": {
+          "card": "4242424242424242",
+          "cvv": "123",
+          "expiry_date": "12/28"
+        }
+      },
+      {
+        "id": "Webmall_EndToEnd_Task2",
+        "category": "FindAndOrder",
+        "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n<task>\\nFind the cheapest offer for the  ROG STRIX 4K UHD DSC Gaming Monitor (XG43UQ), add it to the shopping cart and complete the checkout process with this item. Add the product on page {{product_url}} to the shopping cart and complete the checkout process. Pay via credit card using the following information: Address: {{name}}, {{email}}, {{street}}, {{house_number}}, {{zip}}, {{state}}, {{country}}, Credit card number: {{card}}, CVV: {{cvv}}, expiry date: {{expiry_date}}.\\n</task>",
+        "motivation": "Assess the agent's ability to handle the complexity of a whole end-to-end webshopping process.",
+        "relevant_offers": {
+          "shop1": [],
+          "shop2": [],
+          "shop3": [
+            {
+              "webmall_id": "kovendor.co.uk_571",
+              "name": "Asus 43\\\" ROG STRIX 4K UHD DSC Gaming Monitor (XG43UQ), 3840 x 2160, 1ms, 4 HDMI, DP, USB, Speakers, DisplayHDR 1000, Remote Control, RGB, VESA",
+              "description": "<p>Asus ROG STRIX 4K UHD Gaming Monitor (XG43UQ) features a 43\" screen, 3840 x 2160 resolution, 1ms response time, and DisplayHDR 1000 for an immersive gaming experience.</p>",
+              "price": 899.99,
+              "price_currency": "EUR",
+              "category": "PC Accessories > Monitors",
+              "cluster_id": null,
+              "name_normalized": "Asus ROG STRIX 43\" 4K Gaming Monitor",
+              "product_url": "{{URL_3}}/product/asus-43-rog-strix-4k-uhd-dsc-gaming-monitor-xg43uq-3840-x-2160-1ms-4-hdmi-dp-usb-speakers-displayhdr-1000-remote-control-rgb-vesa",
+              "product_id": 1978,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 265,
+              "woocommerce_id": 1172
+            }
+          ],
+          "shop4": []
+        },
+        "simlar_but_irrelevant_offers": {
+          "shop1": [
+            {
+              "webmall_id": "xcase.co.uk_428",
+              "name": "Asus 34\\\" ROG STRIX UWQHD Ultra-wide Curved Gaming Monitor (XG349C), 3440 x 1440, 1ms, OC 180Hz, sRGB, HDMI, DP,  USB, Speakers, RGB, VESA",
+              "description": "<p>ROG Strix XG349C Gaming Monitor - 34 inch UWQHD (3440 x 1440), overclockable 180Hz, 1ms response time, G-Sync compatible, and USB Type-C hub for seamless connectivity.</p>",
+              "price": 999.99,
+              "price_currency": "EUR",
+              "category": "Peripherals > Monitor > Asus",
+              "cluster_id": null,
+              "name_normalized": "Asus ROG STRIX 34\" Gaming Monitor",
+              "product_url": "{{URL_1}}/product/asus-34-rog-strix-uwqhd-ultra-wide-curved-gaming-monitor-xg349c-3440-x-1440-1ms-oc-180hz-srgb-hdmi-dp-usb-speakers-rgb-vesa",
+              "product_id": 382,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 265,
+              "woocommerce_id": 1910
+            }
+          ],
+          "shop2": [],
+          "shop3": [
+            {
+              "webmall_id": "kovendor.co.uk_430",
+              "name": "Asus 43\\\" ROG STRIX 4K HDR Gaming Monitor (XG438QR), 3840 x 2160, 4ms, 3 HDMI, DP, 120Hz, Speakers, Lighting Effects, Adaptive-Sync, Remote Control, VESA",
+              "description": "<p>Asus ROG STRIX 4K HDR Gaming Monitor (XG438QR) features a 43\" screen, 3840 x 2160 resolution, 4ms response time, and a 120Hz refresh rate, perfect for immersive gaming experiences.</p>",
+              "price": 899.99,
+              "price_currency": "EUR",
+              "category": "PC Accessories > Monitors",
+              "cluster_id": null,
+              "name_normalized": "Asus ROG STRIX 43\" 4K Gaming Monitor",
+              "product_url": "{{URL_3}}/product/asus-43-rog-strix-4k-hdr-gaming-monitor-xg438qr-3840-x-2160-4ms-3-hdmi-dp-120hz-speakers-lighting-effects-adaptive-sync-remote-control-vesa",
+              "product_id": 1837,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 265,
+              "woocommerce_id": 1170
+            }
+          ],
+          "shop4": []
+        },
+        "correct_answer": {
+          "type": "checkout",
+          "answers": [
+            "{{URL_3}}/product/asus-43-rog-strix-4k-uhd-dsc-gaming-monitor-xg43uq-3840-x-2160-1ms-4-hdmi-dp-usb-speakers-displayhdr-1000-remote-control-rgb-vesa"
+          ]
+        },
+        "user_details": {
+          "name": "Jessica Morgan",
+          "street": "Maple Avenue",
+          "house_number": "742",
+          "zip": "60614",
+          "state": "IL",
+          "country": "USA",
+          "email": "jessica.morgan@yahoo.com"
+        },
+        "payment_info": {
+          "card": "4242424242424242",
+          "cvv": "123",
+          "expiry_date": "12/28"
+        }
+      },
+      {
+        "id": "Webmall_EndToEnd_Task3",
+        "category": "FindAndOrder",
+        "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n<task>\\nFind the cheapest offer for a DDR4 2x16 GB RAM Kit with 3000MHz, add it to the shopping cart and complete the checkout process with this item. Add the product on page {{product_url}} to the shopping cart and complete the checkout process. Pay via credit card using the following information: Address: {{name}}, {{email}}, {{street}}, {{house_number}}, {{zip}}, {{state}}, {{country}}, Credit card number: {{card}}, CVV: {{cvv}}, expiry date: {{expiry_date}}.\\n</task>",
+        "motivation": "Assess the agent's ability to handle the complexity of a whole end-to-end webshopping process.",
+        "relevant_offers": {
+          "shop1": [
+            {
+              "webmall_id": "xcase.co.uk_1040",
+              "name": "Corsair Vengeance LPX 32GB Kit (2 x 16GB), DDR4, 3000MHz (PC4-24000), CL16, XMP 2.0, DIMM Memory",
+              "description": "<p>VENGEANCE LPX memory is designed for high-performance overclocking with a pure aluminum heatspreader for faster heat dissipation. Each module is built from a custom performance PCB and highly-screened memory ICs, ensuring reliable performance and compatibility.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance LPX 32GB DDR4 Memory",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-lpx-32gb-kit-2-x-16gb-ddr4-3000mhz-pc4-24000-cl16-xmp-2-0-dimm-memory",
+              "product_id": 914,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 281,
+              "woocommerce_id": 1923
+            }
+          ],
+          "shop2": [],
+          "shop3": [],
+          "shop4": []
+        },
+        "simlar_but_irrelevant_offers": {
+          "shop1": [
+            {
+              "webmall_id": "xcase.co.uk_66",
+              "name": "Corsair Vengeance LPX 32GB Kit (2 x 16GB), DDR4, 3200MHz (PC4-25600), CL16, XMP 2.0, Ryzen Optimised, DIMM Memory",
+              "description": "<p>VENGEANCE LPX memory is designed for high-performance overclocking with a pure aluminum heatspreader for faster heat dissipation. Each module is built from a custom performance PCB and highly-screened memory ICs, ensuring reliable performance and compatibility.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": 878707,
+              "name_normalized": "Corsair Vengeance LPX 32GB DDR4 Memory",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-lpx-32gb-kit-2-x-16gb-ddr4-3200mhz-pc4-25600-cl16-xmp-2-0-ryzen-optimised-dimm-memory",
+              "product_id": 62,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 26,
+              "woocommerce_id": 1754
+            },
+            {
+              "webmall_id": "xcase.co.uk_776",
+              "name": "Corsair Vengeance RGB RT 32GB Memory Kit (2 x 16GB), DDR4, 3600MHz (PC4-28800), CL18, XMP 2.0, 10 LEDs, AMD Optimised, White",
+              "description": "<p>CORSAIR VENGEANCE RGB RT DDR4 memory enhances your PC’s aesthetics while delivering outstanding performance optimized for AMD systems. Each module features ten individually addressable RGB LEDs for brilliant illumination and a dual-tone heatspreader for effective cooling. VENGEANCE RGB RT automatically configures to maximum system speeds for faster load times and smoother multitasking. Customize RGB lighting with CORSAIR iCUE software to match your setup and synchronize with all iCUE-compatible devices.</p>",
+              "price": 139.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": 413228,
+              "name_normalized": "Corsair Vengeance RGB RT 32GB Memory Kit",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-rgb-rt-32gb-memory-kit-2-x-16gb-ddr4-3600mhz-pc4-28800-cl18-xmp-2-0-10-leds-amd-optimised-white",
+              "product_id": 679,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 34,
+              "woocommerce_id": 1760
+            },
+            {
+              "webmall_id": "xcase.co.uk_974",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 5600MHz (PC5-44800), CL36, 1.25V, PMIC, AMD Optimised, DIMM Memory",
+              "description": "<p>Welcome to the cutting edge of performance with Corsair Vengeance DDR5 memory. Push the limits of your system with faster frequencies, greater capacities, and better performance. Features onboard voltage regulation for stable overclocking and custom AMD Expo profiles for tailored settings.</p>",
+              "price": 139.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": 878729,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl36-1-25v-pmic-amd-optimised-dimm-memory",
+              "product_id": 855,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 48,
+              "woocommerce_id": 1765
+            },
+            {
+              "webmall_id": "xcase.co.uk_774",
+              "name": "Corsair Vengeance RGB 32GB Kit (2 x 16GB), DDR5, 6200MHz (PC5-49600)), CL36, 1.4V, XMP 3.0, PMIC, DIMM Memory",
+              "description": "<p>CORSAIR VENGEANCE RGB DDR5 memory delivers high performance with dynamic, individually addressable ten-zone RGB lighting. Optimized for Intel motherboards, it features tightly screened high-frequency memory chips for faster processing and onboard voltage regulation for easy overclocking. Customize RGB lighting and performance profiles with CORSAIR iCUE software.</p>",
+              "price": 159.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance RGB 32GB DDR5 Memory Kit",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-6200mhz-pc5-49600-cl36-1-4v-xmp-3-0-pmic-dimm-memory",
+              "product_id": 677,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 241,
+              "woocommerce_id": 1892
+            },
+            {
+              "webmall_id": "xcase.co.uk_965",
+              "name": "Corsair Vengeance RGB 32GB Kit (2 x 16GB), DDR5, 5600MHz (PC5-44800), CL40, 1.25V, XMP 3.0, PMIC, DIMM Memory, Black",
+              "description": "<p>CORSAIR VENGEANCE RGB DDR5 memory delivers high performance with dynamic, individually addressable ten-zone RGB lighting. Optimized for Intel motherboards, it features tightly screened high-frequency memory chips for faster processing and onboard voltage regulation for stable overclocking. Customize your RGB lighting and performance profiles with CORSAIR iCUE software.</p>",
+              "price": 159.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance RGB 32GB DDR5 Memory Kit",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl40-1-25v-xmp-3-0-pmic-dimm-memory-black",
+              "product_id": 847,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 241,
+              "woocommerce_id": 1893
+            },
+            {
+              "webmall_id": "xcase.co.uk_856",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 5200MHz (PC5-41600), CL40, 1.25V, AMD Optimised, PMIC, DIMM Memory",
+              "description": "<p>CORSAIR VENGEANCE DDR5, optimized for AMD® motherboards, delivers higher frequencies and greater capacities of DDR5 technology in a high-quality, compact module. With onboard voltage regulation and custom AMD EXPO profiles, it ensures your high-end CPU gets data quickly, making it ideal for gaming, content creation, and multitasking.</p>",
+              "price": 139.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-5200mhz-pc5-41600-cl40-1-25v-amd-optimised-pmic-dimm-memory",
+              "product_id": 749,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 282,
+              "woocommerce_id": 1924
+            }
+          ],
+          "shop2": [],
+          "shop3": [
+            {
+              "webmall_id": "kovendor.co.uk_171",
+              "name": "Corsair Vengeance LPX 32GB Kit (2 x 16GB), DDR4, 3200MHz (PC4-25600), CL16, Ryzen Optimised, DIMM Memory",
+              "description": "<p>Corsair Vengeance LPX 32GB Kit (2 x 16GB) DDR4 memory, 3200MHz speed, optimized for Ryzen, with a CAS latency of CL16.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": 878707,
+              "name_normalized": "Corsair Vengeance LPX 32GB DDR4 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-lpx-32gb-kit-2-x-16gb-ddr4-3200mhz-pc4-25600-cl16-ryzen-optimised-dimm-memory",
+              "product_id": 1578,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 26,
+              "woocommerce_id": 1040
+            },
+            {
+              "webmall_id": "kovendor.co.uk_233",
+              "name": "Corsair Vengeance RGB RT 32GB Memory Kit (2 x 16GB), DDR4, 3600MHz (PC4-28800), CL18, 10 LEDs, AMD Optimised, White",
+              "description": "<p>Corsair Vengeance RGB RT 32GB Memory Kit (2 x 16GB) with DDR4, 3600MHz speed, and customizable RGB lighting for enhanced performance.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": 413228,
+              "name_normalized": "Corsair Vengeance RGB RT 32GB Memory Kit",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-rgb-rt-32gb-memory-kit-2-x-16gb-ddr4-3600mhz-pc4-28800-cl18-10-leds-amd-optimised-white",
+              "product_id": 1640,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 34,
+              "woocommerce_id": 1048
+            },
+            {
+              "webmall_id": "kovendor.co.uk_303",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 5600MHz (PC5-44800), CL36, 1.25V, PMIC, AMD Optimised, DIMM Memory",
+              "description": "<p>Corsair Vengeance 32GB Kit (2 x 16GB) DDR5 memory with a speed of 5600MHz, optimized for AMD systems, featuring a heatsink for improved performance.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": 878729,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl36-1-25v-pmic-amd-optimised-dimm-memory",
+              "product_id": 1710,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 48,
+              "woocommerce_id": 1062
+            },
+            {
+              "webmall_id": "kovendor.co.uk_307",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 5600MHz (PC5-44800), CL36, 1.25V, XMP 3.0, PMIC, AMD Optimised, DIMM Memory",
+              "description": "<p>Corsair Vengeance 32GB Kit (2 x 16GB) DDR5 memory with a speed of 5600MHz, optimized for AMD systems, featuring XMP 3.0 support and a heatsink for improved performance.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": 878729,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl36-1-25v-xmp-3-0-pmic-amd-optimised-dimm-memory",
+              "product_id": 1714,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 48,
+              "woocommerce_id": 1063
+            },
+            {
+              "webmall_id": "kovendor.co.uk_159",
+              "name": "Corsair Vengeance RGB 32GB Kit (2 x 16GB), DDR5, 5600MHz (PC5-44800), CL36, 1.25V, XMP 3.0, PMIC, DIMM Memory",
+              "description": "<p>Corsair Vengeance RGB 32GB Kit (2 x 16GB) DDR5 memory with 5600MHz speed, CL36 latency, and dynamic RGB lighting for high-performance computing.</p>",
+              "price": 149.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance RGB 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl36-1-25v-xmp-3-0-pmic-dimm-memory",
+              "product_id": 1566,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 252,
+              "woocommerce_id": 1152
+            },
+            {
+              "webmall_id": "kovendor.co.uk_160",
+              "name": "Corsair Vengeance RGB 32GB Kit (2 x 16GB), DDR5, 6000MHz (PC5-48000), CL36, 1.25V, XMP 3.0, PMIC, DIMM Memory, White",
+              "description": "<p>Corsair Vengeance RGB 32GB Kit (2 x 16GB) DDR5 memory with 6000MHz speed, CL36 latency, and dynamic RGB lighting for high-performance computing.</p>",
+              "price": 149.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance RGB 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-6000mhz-pc5-48000-cl36-1-25v-xmp-3-0-pmic-dimm-memory-white",
+              "product_id": 1567,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 252,
+              "woocommerce_id": 1153
+            },
+            {
+              "webmall_id": "kovendor.co.uk_185",
+              "name": "Kingston Fury Beast 32GB Kit (2 x 16GB), DDR5, 4800MHz (PC5-38400), CL38, 1.1V, ECC, XMP 3.0, AMD EXPO, PMIC, DIMM Memory",
+              "description": "<p>Kingston Fury Beast 32GB Kit (2 x 16GB) DDR5 memory with a speed of 4800MHz, CL38 latency, and ECC support for reliable performance.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Kingston Fury Beast 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/kingston-fury-beast-32gb-kit-2-x-16gb-ddr5-4800mhz-pc5-38400-cl38-1-1v-ecc-xmp-3-0-amd-expo-pmic-dimm-memory",
+              "product_id": 1592,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 260,
+              "woocommerce_id": 1163
+            },
+            {
+              "webmall_id": "kovendor.co.uk_646",
+              "name": "Kingston Fury Beast RGB 32GB Kit (2 x 16GB), DDR5, 6000MHz (PC5-48000), CL36, 1.35V, ECC, XMP 3.0, PMIC, AMD EXPO, DIMM Memory",
+              "description": "<p>Kingston Fury Beast RGB 32GB Kit (2 x 16GB) DDR5 memory with 6000MHz speed, CL36 latency, and vibrant customizable RGB lighting.</p>",
+              "price": 149.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Kingston Fury Beast RGB 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/kingston-fury-beast-rgb-32gb-kit-2-x-16gb-ddr5-6000mhz-pc5-48000-cl36-1-35v-ecc-xmp-3-0-pmic-amd-expo-dimm-memory",
+              "product_id": 2053,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 260,
+              "woocommerce_id": 1164
+            },
+            {
+              "webmall_id": "kovendor.co.uk_525",
+              "name": "ADATA XPG Lancer Blade 32GB Kit (2 x 16GB), DDR5, 5600MHz (PC5-44800), CL46, 1.1V, ECC, PMIC, XMP 3.0, AMD EXPO, DIMM Memory",
+              "description": "<p>ADATA XPG Lancer Blade 32GB Kit (2 x 16GB) DDR5 memory with a speed of 5600MHz, CL46 latency, and ECC support for reliable performance.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "ADATA XPG Lancer Blade 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/adata-xpg-lancer-blade-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl46-1-1v-ecc-pmic-xmp-3-0-amd-expo-dimm-memory",
+              "product_id": 1932,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 275,
+              "woocommerce_id": 1182
+            },
+            {
+              "webmall_id": "kovendor.co.uk_643",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 6200MHz (PC5-49600), CL36, 1.4V, XMP 3.0, DIMM Memory",
+              "description": "<p>Corsair Vengeance 32GB Kit (2 x 16GB) DDR5 memory with a speed of 6200MHz, CL36 latency, and XMP 3.0 support.</p>",
+              "price": 149.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-6200mhz-pc5-49600-cl36-1-4v-xmp-3-0-dimm-memory",
+              "product_id": 2050,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 282,
+              "woocommerce_id": 1189
+            },
+            {
+              "webmall_id": "kovendor.co.uk_650",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 6400MHz (PC5-51200), CL32, 1.4V, XMP 3.0, PMIC, DIMM Memory",
+              "description": "<p>Corsair Vengeance 32GB Kit (2 x 16GB) DDR5 memory with a speed of 6400MHz, designed for high-performance computing.</p>",
+              "price": 149.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-6400mhz-pc5-51200-cl32-1-4v-xmp-3-0-pmic-dimm-memory",
+              "product_id": 2057,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 282,
+              "woocommerce_id": 1190
+            },
+            {
+              "webmall_id": "kovendor.co.uk_666",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 5200MHz (PC5-41600), CL40, 1.25V, XMP 3.0, PMIC, DIMM Memory",
+              "description": "<p>Corsair Vengeance 32GB Kit (2 x 16GB) DDR5 memory with a speed of 5200MHz, CL40 latency, and XMP 3.0 support.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-5200mhz-pc5-41600-cl40-1-25v-xmp-3-0-pmic-dimm-memory",
+              "product_id": 2073,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 282,
+              "woocommerce_id": 1191
+            }
+          ],
+          "shop4": [
+            {
+              "webmall_id": "rog.co.uk_202",
+              "name": "ADATA XPG Lancer Blade RGB 32GB Kit (2 x 16GB), DDR5, 6000MHz, CL30, 1.35V, ECC, PMIC, XMP 3.0, AMD EXPO, DIMM Memory",
+              "description": "<p>Sleek Efficiency, Compact Power. The LANCER BLADE RGB features a low-profile heatsink design, customizable RGB light effects, and supports Intel® XMP 3.0 and AMD EXPO for easy overclocking.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "Memory > DDR5 > RAM",
+              "cluster_id": null,
+              "name_normalized": "ADATA XPG Lancer Blade RGB 32GB DDR5 Memory",
+              "product_url": "{{URL_4}}/product/adata-xpg-lancer-blade-rgb-32gb-kit-2-x-16gb-ddr5-6000mhz-cl30-1-35v-ecc-pmic-xmp-3-0-amd-expo-dimm-memory",
+              "product_id": 2301,
+              "shop_id": 4,
+              "shop": "rog.co.uk_cleaned.json",
+              "sim_id": 275,
+              "woocommerce_id": 1405
+            }
+          ]
+        },
+        "correct_answer": {
+          "type": "checkout",
+          "answers": [
+            "{{URL_1}}/product/corsair-vengeance-lpx-32gb-kit-2-x-16gb-ddr4-3000mhz-pc4-24000-cl16-xmp-2-0-dimm-memory"
+          ]
+        },
+        "user_details": {
+          "name": "Jessica Morgan",
+          "street": "Maple Avenue",
+          "house_number": "742",
+          "zip": "60614",
+          "state": "IL",
+          "country": "USA",
+          "email": "jessica.morgan@yahoo.com"
+        },
+        "payment_info": {
+          "card": "4242424242424242",
+          "cvv": "123",
+          "expiry_date": "12/28"
+        }
+      },
+      {
+        "id": "Webmall_EndToEnd_Task4",
+        "category": "FindAndOrder",
+        "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n<task>\\nFind the cheapest offer for the Asus DUAL RTX4070 SUPER OC White, add it to the shopping cart and complete the checkout process with this item. Add the product on page {{product_url}} to the shopping cart and complete the checkout process. Pay via credit card using the following information: Address: {{name}}, {{email}}, {{street}}, {{house_number}}, {{zip}}, {{state}}, {{country}}, Credit card number: {{card}}, CVV: {{cvv}}, expiry date: {{expiry_date}}.\\n</task>",
+        "motivation": "Assess the agent's ability to handle the complexity of a whole end-to-end webshopping process.",
+        "relevant_offers": {
+          "shop1": [],
+          "shop2": [],
+          "shop3": [
+            {
+              "webmall_id": "kovendor.co.uk_129",
+              "name": "Asus DUAL RTX4070 SUPER OC White, PCIe4, 12GB DDR6X, HDMI, 3 DP, 2550MHz Clock, Overclocked",
+              "description": "<p>Asus DUAL RTX 4070 SUPER OC features Nvidia's 12GB DDR6X graphics chipset with PCIe 4.0 interface, delivering a core clock of 2550 MHz and supporting resolutions up to 7680 x 4320.</p>",
+              "price": 599.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Graphics Cards",
+              "cluster_id": null,
+              "name_normalized": "Asus DUAL RTX 4070 SUPER OC",
+              "product_url": "{{URL_3}}/product/asus-dual-rtx4070-super-oc-white-pcie4-12gb-ddr6x-hdmi-3-dp-2550mhz-clock-overclocked",
+              "product_id": 1536,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 251,
+              "woocommerce_id": 1149
+            }
+          ],
+          "shop4": []
+        },
+        "simlar_but_irrelevant_offers": {
+          "shop1": [
+            {
+              "webmall_id": "xcase.co.uk_322",
+              "name": "Asus DUAL RTX4070 SUPER EVO OC, PCIe4, 12GB DDR6X, HDMI, 3 DP, 2550MHz Clock, Overclocked, White",
+              "description": "<p>ASUS Dual GeForce RTX 4070 SUPER EVO OC Edition 12GB GDDR6X with two powerful Axial-tech fans and a 2.5-slot design for broad compatibility. Powered by NVIDIA DLSS3 and ultra-efficient Ada Lovelace architecture, it features advanced cooling solutions and 0dB technology for silent operation.</p>",
+              "price": 599.99,
+              "price_currency": "EUR",
+              "category": "PC Components > GPU > Asus",
+              "cluster_id": null,
+              "name_normalized": "Asus DUAL RTX 4070 SUPER EVO OC",
+              "product_url": "{{URL_1}}/product/asus-dual-rtx4070-super-evo-oc-pcie4-12gb-ddr6x-hdmi-3-dp-2550mhz-clock-overclocked-white",
+              "product_id": 297,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 251,
+              "woocommerce_id": 1901
+            },
+            {
+              "webmall_id": "xcase.co.uk_343",
+              "name": "Asus ProArt RTX4070 SUPER OC, 12GB DDR6X, HDMI, 3 DP, 2565MHz Clock, Overclocked, Compact 2.5 Slot Design",
+              "description": "<p>SUPER OC Edition 12GB GDDR6X brings elegant and minimalist style to empower creator PC builds with full-scale GeForce RTX™ 40 SUPER Series performance. NVIDIA Studio RTX and AI-accelerated creator apps, exclusive AI software, and Studio Drivers for unmatched creativity and performance.</p>",
+              "price": 599.99,
+              "price_currency": "EUR",
+              "category": "PC Components > GPU > Asus",
+              "cluster_id": null,
+              "name_normalized": "Asus ProArt RTX 4070 SUPER OC",
+              "product_url": "{{URL_1}}/product/asus-proart-rtx4070-super-oc-12gb-ddr6x-hdmi-3-dp-2565mhz-clock-overclocked-compact-2-5-slot-design",
+              "product_id": 315,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 270,
+              "woocommerce_id": 1912
+            }
+          ],
+          "shop2": [],
+          "shop3": [
+            {
+              "webmall_id": "kovendor.co.uk_454",
+              "name": "Asus DUAL RTX4070 SUPER, PCIe4, 12GB DDR6X, HDMI, 3 DP, 2505MHz Clock",
+              "description": "<p>Asus DUAL RTX 4070 SUPER features Nvidia's latest chipset with 12GB DDR6X memory, PCIe 4.0 interface, and a core clock of up to 2505 MHz, designed for high-performance gaming and computing.</p>",
+              "price": 599.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Graphics Cards",
+              "cluster_id": null,
+              "name_normalized": "Asus DUAL RTX 4070 SUPER",
+              "product_url": "{{URL_3}}/product/asus-dual-rtx4070-super-pcie4-12gb-ddr6x-hdmi-3-dp-2505mhz-clock",
+              "product_id": 1861,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 251,
+              "woocommerce_id": 1150
+            },
+            {
+              "webmall_id": "kovendor.co.uk_422",
+              "name": "Asus ProArt RTX4070 SUPER OC, PCIe4, 12GB DDR6X, HDMI, 3 DP, 2565MHz Clock, Overclocked, Compact 2.5 Slot Design",
+              "description": "<p>Asus ProArt RTX 4070 SUPER features 12GB DDR6X memory, PCIe 4.0 interface, and a boost clock of 2565 MHz, designed for high-performance graphics.</p>",
+              "price": 599.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Graphics Cards",
+              "cluster_id": null,
+              "name_normalized": "Asus ProArt RTX 4070 SUPER",
+              "product_url": "{{URL_3}}/product/asus-proart-rtx4070-super-oc-pcie4-12gb-ddr6x-hdmi-3-dp-2565mhz-clock-overclocked-compact-2-5-slot-design",
+              "product_id": 1829,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 270,
+              "woocommerce_id": 1177
+            }
+          ],
+          "shop4": []
+        },
+        "correct_answer": {
+          "type": "checkout",
+          "answers": [
+            "{{URL_3}}/product/asus-dual-rtx4070-super-oc-white-pcie4-12gb-ddr6x-hdmi-3-dp-2550mhz-clock-overclocked"
+          ]
+        },
+        "user_details": {
+          "name": "Jessica Morgan",
+          "street": "Maple Avenue",
+          "house_number": "742",
+          "zip": "60614",
+          "state": "IL",
+          "country": "USA",
+          "email": "jessica.morgan@yahoo.com"
+        },
+        "payment_info": {
+          "card": "4242424242424242",
+          "cvv": "123",
+          "expiry_date": "12/28"
+        }
+      },
+      {
+        "id": "Webmall_EndToEnd_Task5",
+        "category": "FindAndOrder",
+        "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n<task>\\nFind the cheapest offer for the Asus ROG Ryuo III 360 ARGB 360mm Liquid CPU Cooler, add it to the shopping cart and complete the checkout process with this item. Add the product on page {{product_url}} to the shopping cart and complete the checkout process. Pay via credit card using the following information: Address: {{name}}, {{email}}, {{street}}, {{house_number}}, {{zip}}, {{state}}, {{country}}, Credit card number: {{card}}, CVV: {{cvv}}, expiry date: {{expiry_date}}.\\n</task>",
+        "motivation": "Assess the agent's ability to handle the complexity of a whole end-to-end webshopping process.",
+        "relevant_offers": {
+          "shop1": [],
+          "shop2": [],
+          "shop3": [
+            {
+              "webmall_id": "kovendor.co.uk_229",
+              "name": "Asus ROG Ryuo III 360 ARGB 360mm Liquid CPU Cooler, 8th Gen Asetek Pump, 3 x ARGB Fans, Anime Matrix LED Display, White Edition",
+              "description": "<p>Asus ROG Ryuo III 360 ARGB Liquid CPU Cooler features a 360mm radiator, 3 x ARGB fans, and an Anime Matrix LED display, compatible with both AMD and Intel sockets.</p>",
+              "price": 149.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Cooling",
+              "cluster_id": 866745,
+              "name_normalized": "Asus ROG Ryuo III 360 ARGB Liquid CPU Cooler",
+              "product_url": "{{URL_3}}/product/asus-rog-ryuo-iii-360-argb-360mm-liquid-cpu-cooler-8th-gen-asetek-pump-3-x-argb-fans-anime-matrix-led-display-white-edition",
+              "product_id": 1636,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 33,
+              "woocommerce_id": 1047
+            }
+          ],
+          "shop4": []
+        },
+        "simlar_but_irrelevant_offers": {
+          "shop1": [
+            {
+              "webmall_id": "xcase.co.uk_1045",
+              "name": "Asus ROG Ryuo III 360 ARGB 360mm Liquid CPU Cooler, 8th Gen Asetek Pump, 3 x ARGB Fans, Anime Matrix LED Display, White Edition",
+              "description": "<p>ROG Ryuo III 360 all-in-one CPU liquid cooler with Asetek 8th gen pump, Anime Matrix LED display, and ROG ARGB fans for optimal cooling performance.</p>",
+              "price": 159.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Cooling > Asus",
+              "cluster_id": 866745,
+              "name_normalized": "Asus ROG Ryuo III 360 ARGB Liquid CPU Cooler",
+              "product_url": "{{URL_1}}/product/asus-rog-ryuo-iii-360-argb-360mm-liquid-cpu-cooler-8th-gen-asetek-pump-3-x-argb-fans-anime-matrix-led-display-white-edition",
+              "product_id": 919,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 33,
+              "woocommerce_id": 1759
+            }
+          ],
+          "shop2": [
+            {
+              "webmall_id": "memorysmithcomputing.uk_130",
+              "name": "Asus ROG Ryuo III 360 ARGB 360mm Liquid CPU Cooler, 8th Gen Asetek Pump, 3 x ARGB Fans, Anime Matrix LED Display, White Edition",
+              "description": "<p>ROG Ryuo III 360 all-in-one CPU liquid cooler with Asetek 8th gen pump, Anime Matrix LED Display, and ROG ARGB fans. Enhanced pump design for higher flow and quieter operation, customizable ARGB illumination, and extensive compatibility with Intel and AMD platforms.</p>",
+              "price": 266.07,
+              "price_currency": "EUR",
+              "category": "Hardware > PC Components > Cooling",
+              "cluster_id": 866745,
+              "name_normalized": "Asus ROG Ryuo III 360 Liquid CPU Cooler",
+              "product_url": "{{URL_2}}/product/asus-rog-ryuo-iii-360-argb-360mm-liquid-cpu-cooler-8th-gen-asetek-pump-3-x-argb-fans-anime-matrix-led-display-white-edition",
+              "product_id": 1103,
+              "shop_id": 2,
+              "shop": "memorysmithcomputing.uk_cleaned.json",
+              "sim_id": 33,
+              "woocommerce_id": 3328
+            }
+          ],
+          "shop3": [],
+          "shop4": []
+        },
+        "correct_answer": {
+          "type": "checkout",
+          "answers": [
+            "{{URL_3}}/product/asus-rog-ryuo-iii-360-argb-360mm-liquid-cpu-cooler-8th-gen-asetek-pump-3-x-argb-fans-anime-matrix-led-display-white-edition"
+          ]
+        },
+        "user_details": {
+          "name": "Jessica Morgan",
+          "street": "Maple Avenue",
+          "house_number": "742",
+          "zip": "60614",
+          "state": "IL",
+          "country": "USA",
+          "email": "jessica.morgan@yahoo.com"
+        },
+        "payment_info": {
+          "card": "4242424242424242",
+          "cvv": "123",
+          "expiry_date": "12/28"
+        }
+      },
+      {
+        "id": "Webmall_EndToEnd_Task6",
+        "category": "FindAndOrder",
+        "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n<task>\\nFind the cheapest offer for the Netac Z Slim 1TB M.2 External SSD, add it to the shopping cart and complete the checkout process with this item. Add the product on page {{product_url}} to the shopping cart and complete the checkout process. Pay via credit card using the following information: Address: {{name}}, {{email}}, {{street}}, {{house_number}}, {{zip}}, {{state}}, {{country}}, Credit card number: {{card}}, CVV: {{cvv}}, expiry date: {{expiry_date}}.\\n</task>",
+        "motivation": "Assess the agent's ability to handle the complexity of a whole end-to-end webshopping process.",
+        "relevant_offers": {
+          "shop1": [],
+          "shop2": [
+            {
+              "webmall_id": "memorysmithcomputing.uk_318",
+              "name": "Netac Z Slim 1TB M.2 External SSD, USB 3.2 Gen2 Type-C, Up to 550MB/s, Aluminium",
+              "description": "<p>Netac portable SSD Z Slim offers up to 550MB/s speed with USB 3.2 Gen 2 Type-C interface, making it faster, lighter, and safer. Ideal for gamers using it as external storage for PS4 and XBOX.</p>",
+              "price": 66.0,
+              "price_currency": "EUR",
+              "category": "Hardware > PC Components > External Hard Drives",
+              "cluster_id": 1183432,
+              "name_normalized": "Netac Z Slim 1TB M.2 External SSD",
+              "product_url": "{{URL_2}}/product/netac-z-slim-1tb-m-2-external-ssd-usb-3-2-gen2-type-c-up-to-550mb-s-aluminium",
+              "product_id": 1291,
+              "shop_id": 2,
+              "shop": "memorysmithcomputing.uk_cleaned.json",
+              "sim_id": 185,
+              "woocommerce_id": 3430
+            }
+          ],
+          "shop3": [],
+          "shop4": []
+        },
+        "simlar_but_irrelevant_offers": {
+          "shop1": [
+            {
+              "webmall_id": "xcase.co.uk_73",
+              "name": "Netac Z Slim 1TB M.2 External SSD, USB 3.2 Gen2 Type-C, Up to 550MB/s, Aluminium",
+              "description": "<p>Netac portable SSD Z Slim offers up to 550MB/s speed with USB 3.2 Gen 2 Type-C interface, making it faster, lighter, and safer for gamers and general users alike.</p>",
+              "price": 89.99,
+              "price_currency": "EUR",
+              "category": "Storage > SSD > Netac",
+              "cluster_id": 1183432,
+              "name_normalized": "Netac Z Slim 1TB M.2 External SSD",
+              "product_url": "{{URL_1}}/product/netac-z-slim-1tb-m-2-external-ssd-usb-3-2-gen2-type-c-up-to-550mb-s-aluminium",
+              "product_id": 69,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 185,
+              "woocommerce_id": 1841
+            },
+            {
+              "webmall_id": "xcase.co.uk_180",
+              "name": "Netac Z Slim 1TB M.2 External SSD, USB 3.2 Gen2 Type-C, Up to 550MB/s, Aluminium",
+              "description": "<p>Netac portable SSD Z Slim offers up to 550MB/s speed with USB 3.2 Gen 2 Type-C interface, making it faster, lighter, and safer. Ideal for gamers using it as external storage for PS4 and XBOX.</p>",
+              "price": 89.99,
+              "price_currency": "EUR",
+              "category": "Storage > SSD > Netac",
+              "cluster_id": 1183432,
+              "name_normalized": "Netac Z Slim 1TB M.2 External SSD",
+              "product_url": "{{URL_1}}/product/netac-z-slim-1tb-m-2-external-ssd-usb-3-2-gen2-type-c-up-to-550mb-s-aluminium",
+              "product_id": 170,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 185,
+              "woocommerce_id": 1842
+            }
+          ],
+          "shop2": [],
+          "shop3": [],
+          "shop4": []
+        },
+        "correct_answer": {
+          "type": "checkout",
+          "answers": [
+            "{{URL_2}}/product/netac-z-slim-1tb-m-2-external-ssd-usb-3-2-gen2-type-c-up-to-550mb-s-aluminium"
+          ]
+        },
+        "user_details": {
+          "name": "Jessica Morgan",
+          "street": "Maple Avenue",
+          "house_number": "742",
+          "zip": "60614",
+          "state": "IL",
+          "country": "USA",
+          "email": "jessica.morgan@yahoo.com"
+        },
+        "payment_info": {
+          "card": "4242424242424242",
+          "cvv": "123",
+          "expiry_date": "12/28"
+        }
+      },
+      {
+        "id": "Webmall_EndToEnd_Task7",
+        "category": "FindAndOrder",
+        "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n<task>\\nFind the cheapest offer for the Asus ROG Ryuo III 360 ARGB 360mm Liquid CPU Cooler and the cheapest offer for the Corsair Vengeance LPX 16GB Kit (2 x 8GB), add the respective cheapest offer to the shopping cart and complete the checkout process with these items. Add the products on page {{product_url}} to the shopping cart and complete the checkout process. Pay via credit card using the following information: Address: {{name}}, {{email}}, {{street}}, {{house_number}}, {{zip}}, {{state}}, {{country}}, Credit card number: {{card}}, CVV: {{cvv}}, expiry date: {{expiry_date}}.\\n</task>",
+        "motivation": "Assess the agent's ability to handle the complexity of a whole end-to-end webshopping process.",
+        "relevant_offers": {
+          "shop1": [],
+          "shop2": [],
+          "shop3": [
+            {
+              "webmall_id": "kovendor.co.uk_229",
+              "name": "Asus ROG Ryuo III 360 ARGB 360mm Liquid CPU Cooler, 8th Gen Asetek Pump, 3 x ARGB Fans, Anime Matrix LED Display, White Edition",
+              "description": "<p>Asus ROG Ryuo III 360 ARGB Liquid CPU Cooler features a 360mm radiator, 3 x ARGB fans, and an Anime Matrix LED display, compatible with both AMD and Intel sockets.</p>",
+              "price": 149.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Cooling",
+              "cluster_id": 866745,
+              "name_normalized": "Asus ROG Ryuo III 360 ARGB Liquid CPU Cooler",
+              "product_url": "{{URL_3}}/product/asus-rog-ryuo-iii-360-argb-360mm-liquid-cpu-cooler-8th-gen-asetek-pump-3-x-argb-fans-anime-matrix-led-display-white-edition",
+              "product_id": 1636,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 33,
+              "woocommerce_id": 1047
+            },
+            {
+              "webmall_id": "kovendor.co.uk_282",
+              "name": "Corsair Vengeance LPX 16GB Kit (2 x 8GB), DDR4, 3000MHz (PC4-24000), CL16, XMP 2.0, DIMM Memory",
+              "description": "<p>Corsair Vengeance LPX 16GB Kit (2 x 8GB) DDR4 memory with a speed of 3000MHz, designed for high-performance computing.</p>",
+              "price": 65.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": 878724,
+              "name_normalized": "Corsair Vengeance LPX 16GB DDR4 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-lpx-16gb-kit-2-x-8gb-ddr4-3000mhz-pc4-24000-cl16-xmp-2-0-dimm-memory",
+              "product_id": 1689,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 42,
+              "woocommerce_id": 1056
+            }
+          ],
+          "shop4": []
+        },
+        "simlar_but_irrelevant_offers": {
+          "shop1": [
+            {
+              "webmall_id": "xcase.co.uk_1045",
+              "name": "Asus ROG Ryuo III 360 ARGB 360mm Liquid CPU Cooler, 8th Gen Asetek Pump, 3 x ARGB Fans, Anime Matrix LED Display, White Edition",
+              "description": "<p>ROG Ryuo III 360 all-in-one CPU liquid cooler with Asetek 8th gen pump, Anime Matrix LED display, and ROG ARGB fans for optimal cooling performance.</p>",
+              "price": 159.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Cooling > Asus",
+              "cluster_id": 866745,
+              "name_normalized": "Asus ROG Ryuo III 360 ARGB Liquid CPU Cooler",
+              "product_url": "{{URL_1}}/product/asus-rog-ryuo-iii-360-argb-360mm-liquid-cpu-cooler-8th-gen-asetek-pump-3-x-argb-fans-anime-matrix-led-display-white-edition",
+              "product_id": 919,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 33,
+              "woocommerce_id": 1759
+            },
+            {
+              "webmall_id": "xcase.co.uk_66",
+              "name": "Corsair Vengeance LPX 32GB Kit (2 x 16GB), DDR4, 3200MHz (PC4-25600), CL16, XMP 2.0, Ryzen Optimised, DIMM Memory",
+              "description": "<p>VENGEANCE LPX memory is designed for high-performance overclocking with a pure aluminum heatspreader for faster heat dissipation. Each module is built from a custom performance PCB and highly-screened memory ICs, ensuring reliable performance and compatibility.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": 878707,
+              "name_normalized": "Corsair Vengeance LPX 32GB DDR4 Memory",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-lpx-32gb-kit-2-x-16gb-ddr4-3200mhz-pc4-25600-cl16-xmp-2-0-ryzen-optimised-dimm-memory",
+              "product_id": 62,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 26,
+              "woocommerce_id": 1754
+            },
+            {
+              "webmall_id": "xcase.co.uk_776",
+              "name": "Corsair Vengeance RGB RT 32GB Memory Kit (2 x 16GB), DDR4, 3600MHz (PC4-28800), CL18, XMP 2.0, 10 LEDs, AMD Optimised, White",
+              "description": "<p>CORSAIR VENGEANCE RGB RT DDR4 memory enhances your PC’s aesthetics while delivering outstanding performance optimized for AMD systems. Each module features ten individually addressable RGB LEDs for brilliant illumination and a dual-tone heatspreader for effective cooling. VENGEANCE RGB RT automatically configures to maximum system speeds for faster load times and smoother multitasking. Customize RGB lighting with CORSAIR iCUE software to match your setup and synchronize with all iCUE-compatible devices.</p>",
+              "price": 139.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": 413228,
+              "name_normalized": "Corsair Vengeance RGB RT 32GB Memory Kit",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-rgb-rt-32gb-memory-kit-2-x-16gb-ddr4-3600mhz-pc4-28800-cl18-xmp-2-0-10-leds-amd-optimised-white",
+              "product_id": 679,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 34,
+              "woocommerce_id": 1760
+            },
+            {
+              "webmall_id": "xcase.co.uk_842",
+              "name": "Corsair Vengeance LPX 16GB Kit (2 x 8GB), DDR4, 3000MHz (PC4-24000), CL16, XMP 2.0, DIMM Memory",
+              "description": "<p>VENGEANCE LPX memory is designed for high-performance overclocking. The heatspreader is made of pure aluminum for faster heat dissipation, and the custom performance PCB helps manage heat and provides superior overclocking headroom. Each IC is individually screened for peak performance potential.</p>",
+              "price": 79.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": 878724,
+              "name_normalized": "Corsair Vengeance LPX 16GB DDR4 Memory",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-lpx-16gb-kit-2-x-8gb-ddr4-3000mhz-pc4-24000-cl16-xmp-2-0-dimm-memory",
+              "product_id": 735,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 42,
+              "woocommerce_id": 1762
+            },
+            {
+              "webmall_id": "xcase.co.uk_974",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 5600MHz (PC5-44800), CL36, 1.25V, PMIC, AMD Optimised, DIMM Memory",
+              "description": "<p>Welcome to the cutting edge of performance with Corsair Vengeance DDR5 memory. Push the limits of your system with faster frequencies, greater capacities, and better performance. Features onboard voltage regulation for stable overclocking and custom AMD Expo profiles for tailored settings.</p>",
+              "price": 139.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": 878729,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl36-1-25v-pmic-amd-optimised-dimm-memory",
+              "product_id": 855,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 48,
+              "woocommerce_id": 1765
+            },
+            {
+              "webmall_id": "xcase.co.uk_774",
+              "name": "Corsair Vengeance RGB 32GB Kit (2 x 16GB), DDR5, 6200MHz (PC5-49600)), CL36, 1.4V, XMP 3.0, PMIC, DIMM Memory",
+              "description": "<p>CORSAIR VENGEANCE RGB DDR5 memory delivers high performance with dynamic, individually addressable ten-zone RGB lighting. Optimized for Intel motherboards, it features tightly screened high-frequency memory chips for faster processing and onboard voltage regulation for easy overclocking. Customize RGB lighting and performance profiles with CORSAIR iCUE software.</p>",
+              "price": 159.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance RGB 32GB DDR5 Memory Kit",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-6200mhz-pc5-49600-cl36-1-4v-xmp-3-0-pmic-dimm-memory",
+              "product_id": 677,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 241,
+              "woocommerce_id": 1892
+            },
+            {
+              "webmall_id": "xcase.co.uk_965",
+              "name": "Corsair Vengeance RGB 32GB Kit (2 x 16GB), DDR5, 5600MHz (PC5-44800), CL40, 1.25V, XMP 3.0, PMIC, DIMM Memory, Black",
+              "description": "<p>CORSAIR VENGEANCE RGB DDR5 memory delivers high performance with dynamic, individually addressable ten-zone RGB lighting. Optimized for Intel motherboards, it features tightly screened high-frequency memory chips for faster processing and onboard voltage regulation for stable overclocking. Customize your RGB lighting and performance profiles with CORSAIR iCUE software.</p>",
+              "price": 159.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance RGB 32GB DDR5 Memory Kit",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl40-1-25v-xmp-3-0-pmic-dimm-memory-black",
+              "product_id": 847,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 241,
+              "woocommerce_id": 1893
+            },
+            {
+              "webmall_id": "xcase.co.uk_936",
+              "name": "Corsair Vengeance 64GB Kit (2 x 32GB), DDR5, 5200MHz (PC5-41600), CL40, 1.25V, XMP 3.0, PMIC, DIMM Memory",
+              "description": "<p>CORSAIR VENGEANCE DDR5, optimized for Intel® motherboards, delivers higher frequencies and greater capacities of DDR5 technology in a high-quality, compact module. With onboard voltage regulation and custom Intel® XMP 3.0 profiles, it ensures your high-end CPU gets data quickly, making it ideal for gaming, content creation, and multitasking.</p>",
+              "price": 299.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance 64GB DDR5 Memory",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-64gb-kit-2-x-32gb-ddr5-5200mhz-pc5-41600-cl40-1-25v-xmp-3-0-pmic-dimm-memory",
+              "product_id": 821,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 252,
+              "woocommerce_id": 1902
+            },
+            {
+              "webmall_id": "xcase.co.uk_329",
+              "name": "Corsair Vengeance LPX 64GB Kit (2 x 32GB), DDR4, 3200MHz (PC4-25600), CL16, XMP 2.0, DIMM Memory",
+              "description": "<p>VENGEANCE LPX memory is designed for high-performance overclocking with a pure aluminum heatspreader for faster heat dissipation and superior overclocking headroom. Each IC is individually screened for peak performance potential.</p>",
+              "price": 299.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance LPX 64GB DDR4 Memory",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-lpx-64gb-kit-2-x-32gb-ddr4-3200mhz-pc4-25600-cl16-xmp-2-0-dimm-memory",
+              "product_id": 304,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 281,
+              "woocommerce_id": 1922
+            },
+            {
+              "webmall_id": "xcase.co.uk_1040",
+              "name": "Corsair Vengeance LPX 32GB Kit (2 x 16GB), DDR4, 3000MHz (PC4-24000), CL16, XMP 2.0, DIMM Memory",
+              "description": "<p>VENGEANCE LPX memory is designed for high-performance overclocking with a pure aluminum heatspreader for faster heat dissipation. Each module is built from a custom performance PCB and highly-screened memory ICs, ensuring reliable performance and compatibility.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance LPX 32GB DDR4 Memory",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-lpx-32gb-kit-2-x-16gb-ddr4-3000mhz-pc4-24000-cl16-xmp-2-0-dimm-memory",
+              "product_id": 914,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 281,
+              "woocommerce_id": 1923
+            },
+            {
+              "webmall_id": "xcase.co.uk_856",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 5200MHz (PC5-41600), CL40, 1.25V, AMD Optimised, PMIC, DIMM Memory",
+              "description": "<p>CORSAIR VENGEANCE DDR5, optimized for AMD® motherboards, delivers higher frequencies and greater capacities of DDR5 technology in a high-quality, compact module. With onboard voltage regulation and custom AMD EXPO profiles, it ensures your high-end CPU gets data quickly, making it ideal for gaming, content creation, and multitasking.</p>",
+              "price": 139.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory > Corsair",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_1}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-5200mhz-pc5-41600-cl40-1-25v-amd-optimised-pmic-dimm-memory",
+              "product_id": 749,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 282,
+              "woocommerce_id": 1924
+            }
+          ],
+          "shop2": [
+            {
+              "webmall_id": "memorysmithcomputing.uk_130",
+              "name": "Asus ROG Ryuo III 360 ARGB 360mm Liquid CPU Cooler, 8th Gen Asetek Pump, 3 x ARGB Fans, Anime Matrix LED Display, White Edition",
+              "description": "<p>ROG Ryuo III 360 all-in-one CPU liquid cooler with Asetek 8th gen pump, Anime Matrix LED Display, and ROG ARGB fans. Enhanced pump design for higher flow and quieter operation, customizable ARGB illumination, and extensive compatibility with Intel and AMD platforms.</p>",
+              "price": 266.07,
+              "price_currency": "EUR",
+              "category": "Hardware > PC Components > Cooling",
+              "cluster_id": 866745,
+              "name_normalized": "Asus ROG Ryuo III 360 Liquid CPU Cooler",
+              "product_url": "{{URL_2}}/product/asus-rog-ryuo-iii-360-argb-360mm-liquid-cpu-cooler-8th-gen-asetek-pump-3-x-argb-fans-anime-matrix-led-display-white-edition",
+              "product_id": 1103,
+              "shop_id": 2,
+              "shop": "memorysmithcomputing.uk_cleaned.json",
+              "sim_id": 33,
+              "woocommerce_id": 3328
+            }
+          ],
+          "shop3": [
+            {
+              "webmall_id": "kovendor.co.uk_171",
+              "name": "Corsair Vengeance LPX 32GB Kit (2 x 16GB), DDR4, 3200MHz (PC4-25600), CL16, Ryzen Optimised, DIMM Memory",
+              "description": "<p>Corsair Vengeance LPX 32GB Kit (2 x 16GB) DDR4 memory, 3200MHz speed, optimized for Ryzen, with a CAS latency of CL16.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": 878707,
+              "name_normalized": "Corsair Vengeance LPX 32GB DDR4 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-lpx-32gb-kit-2-x-16gb-ddr4-3200mhz-pc4-25600-cl16-ryzen-optimised-dimm-memory",
+              "product_id": 1578,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 26,
+              "woocommerce_id": 1040
+            },
+            {
+              "webmall_id": "kovendor.co.uk_233",
+              "name": "Corsair Vengeance RGB RT 32GB Memory Kit (2 x 16GB), DDR4, 3600MHz (PC4-28800), CL18, 10 LEDs, AMD Optimised, White",
+              "description": "<p>Corsair Vengeance RGB RT 32GB Memory Kit (2 x 16GB) with DDR4, 3600MHz speed, and customizable RGB lighting for enhanced performance.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": 413228,
+              "name_normalized": "Corsair Vengeance RGB RT 32GB Memory Kit",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-rgb-rt-32gb-memory-kit-2-x-16gb-ddr4-3600mhz-pc4-28800-cl18-10-leds-amd-optimised-white",
+              "product_id": 1640,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 34,
+              "woocommerce_id": 1048
+            },
+            {
+              "webmall_id": "kovendor.co.uk_303",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 5600MHz (PC5-44800), CL36, 1.25V, PMIC, AMD Optimised, DIMM Memory",
+              "description": "<p>Corsair Vengeance 32GB Kit (2 x 16GB) DDR5 memory with a speed of 5600MHz, optimized for AMD systems, featuring a heatsink for improved performance.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": 878729,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl36-1-25v-pmic-amd-optimised-dimm-memory",
+              "product_id": 1710,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 48,
+              "woocommerce_id": 1062
+            },
+            {
+              "webmall_id": "kovendor.co.uk_307",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 5600MHz (PC5-44800), CL36, 1.25V, XMP 3.0, PMIC, AMD Optimised, DIMM Memory",
+              "description": "<p>Corsair Vengeance 32GB Kit (2 x 16GB) DDR5 memory with a speed of 5600MHz, optimized for AMD systems, featuring XMP 3.0 support and a heatsink for improved performance.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": 878729,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl36-1-25v-xmp-3-0-pmic-amd-optimised-dimm-memory",
+              "product_id": 1714,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 48,
+              "woocommerce_id": 1063
+            },
+            {
+              "webmall_id": "kovendor.co.uk_23",
+              "name": "Corsair Vengeance RGB RT 32GB Memory Kit (4 x 8GB), DDR4, 3600MHz (PC4-28800), CL18, XMP 2.0, 10 LEDs, AMD Optimised, Black",
+              "description": "<p>CORSAIR VENGEANCE RGB RT DDR4 memory enhances your PC’s aesthetics while delivering outstanding performance optimized for AMD systems. Each module features ten individually addressable RGB LEDs for brilliant illumination and a dual-tone heatspreader for superior cooling. Automatically configures to maximum system speeds for faster load times and smoother multitasking. Customize RGB lighting with CORSAIR iCUE software.</p>",
+              "price": 149.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance RGB RT 32GB Memory Kit",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-rgb-rt-32gb-memory-kit-4-x-8gb-ddr4-3600mhz-pc4-28800-cl18-xmp-2-0-10-leds-amd-optimised-black",
+              "product_id": 1430,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 241,
+              "woocommerce_id": 1128
+            },
+            {
+              "webmall_id": "kovendor.co.uk_131",
+              "name": "Corsair Vengeance RGB 64GB Kit (4 x 16GB), DDR5, 5600MHz (PC5-44800), CL36, 1.25V, XMP 3.0, PMIC, DIMM Memory",
+              "description": "<p>Corsair Vengeance RGB 64GB Kit (4 x 16GB) DDR5 memory with 5600MHz speed, CL36 latency, and dynamic ten-zone RGB lighting.</p>",
+              "price": 299.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance RGB 64GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-rgb-64gb-kit-4-x-16gb-ddr5-5600mhz-pc5-44800-cl36-1-25v-xmp-3-0-pmic-dimm-memory",
+              "product_id": 1538,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 252,
+              "woocommerce_id": 1151
+            },
+            {
+              "webmall_id": "kovendor.co.uk_159",
+              "name": "Corsair Vengeance RGB 32GB Kit (2 x 16GB), DDR5, 5600MHz (PC5-44800), CL36, 1.25V, XMP 3.0, PMIC, DIMM Memory",
+              "description": "<p>Corsair Vengeance RGB 32GB Kit (2 x 16GB) DDR5 memory with 5600MHz speed, CL36 latency, and dynamic RGB lighting for high-performance computing.</p>",
+              "price": 149.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance RGB 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl36-1-25v-xmp-3-0-pmic-dimm-memory",
+              "product_id": 1566,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 252,
+              "woocommerce_id": 1152
+            },
+            {
+              "webmall_id": "kovendor.co.uk_160",
+              "name": "Corsair Vengeance RGB 32GB Kit (2 x 16GB), DDR5, 6000MHz (PC5-48000), CL36, 1.25V, XMP 3.0, PMIC, DIMM Memory, White",
+              "description": "<p>Corsair Vengeance RGB 32GB Kit (2 x 16GB) DDR5 memory with 6000MHz speed, CL36 latency, and dynamic RGB lighting for high-performance computing.</p>",
+              "price": 149.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance RGB 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-6000mhz-pc5-48000-cl36-1-25v-xmp-3-0-pmic-dimm-memory-white",
+              "product_id": 1567,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 252,
+              "woocommerce_id": 1153
+            },
+            {
+              "webmall_id": "kovendor.co.uk_436",
+              "name": "Corsair Vengeance 64GB Kit (2 x 32GB), DDR5, 5600MHz (PC5-44800), CL40, 1.25V, PMIC, AMD Optimised, DIMM Memory",
+              "description": "<p>Corsair Vengeance 64GB Kit (2 x 32GB) DDR5 memory with a speed of 5600MHz, optimized for AMD systems.</p>",
+              "price": 299.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance 64GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-64gb-kit-2-x-32gb-ddr5-5600mhz-pc5-44800-cl40-1-25v-pmic-amd-optimised-dimm-memory",
+              "product_id": 1843,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 252,
+              "woocommerce_id": 1154
+            },
+            {
+              "webmall_id": "kovendor.co.uk_589",
+              "name": "Corsair Vengeance LPX 8GB, DDR4, 3200MHz (PC4-25600), CL16, Ryzen Optimised, DIMM Memory",
+              "description": "<p>Corsair Vengeance LPX 8GB DDR4 memory module, 3200MHz speed, optimized for Ryzen, with a CAS latency of CL16 and a heatsink for improved performance.</p>",
+              "price": 45.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance LPX 8GB DDR4 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-lpx-8gb-ddr4-3200mhz-pc4-25600-cl16-ryzen-optimised-dimm-memory",
+              "product_id": 1996,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 281,
+              "woocommerce_id": 1188
+            },
+            {
+              "webmall_id": "kovendor.co.uk_643",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 6200MHz (PC5-49600), CL36, 1.4V, XMP 3.0, DIMM Memory",
+              "description": "<p>Corsair Vengeance 32GB Kit (2 x 16GB) DDR5 memory with a speed of 6200MHz, CL36 latency, and XMP 3.0 support.</p>",
+              "price": 149.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-6200mhz-pc5-49600-cl36-1-4v-xmp-3-0-dimm-memory",
+              "product_id": 2050,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 282,
+              "woocommerce_id": 1189
+            },
+            {
+              "webmall_id": "kovendor.co.uk_650",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 6400MHz (PC5-51200), CL32, 1.4V, XMP 3.0, PMIC, DIMM Memory",
+              "description": "<p>Corsair Vengeance 32GB Kit (2 x 16GB) DDR5 memory with a speed of 6400MHz, designed for high-performance computing.</p>",
+              "price": 149.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-6400mhz-pc5-51200-cl32-1-4v-xmp-3-0-pmic-dimm-memory",
+              "product_id": 2057,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 282,
+              "woocommerce_id": 1190
+            },
+            {
+              "webmall_id": "kovendor.co.uk_666",
+              "name": "Corsair Vengeance 32GB Kit (2 x 16GB), DDR5, 5200MHz (PC5-41600), CL40, 1.25V, XMP 3.0, PMIC, DIMM Memory",
+              "description": "<p>Corsair Vengeance 32GB Kit (2 x 16GB) DDR5 memory with a speed of 5200MHz, CL40 latency, and XMP 3.0 support.</p>",
+              "price": 129.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Memory",
+              "cluster_id": null,
+              "name_normalized": "Corsair Vengeance 32GB DDR5 Memory",
+              "product_url": "{{URL_3}}/product/corsair-vengeance-32gb-kit-2-x-16gb-ddr5-5200mhz-pc5-41600-cl40-1-25v-xmp-3-0-pmic-dimm-memory",
+              "product_id": 2073,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 282,
+              "woocommerce_id": 1191
+            }
+          ],
+          "shop4": []
+        },
+        "correct_answer": {
+          "type": "checkout",
+          "answers": [
+            "{{URL_3}}/product/asus-rog-ryuo-iii-360-argb-360mm-liquid-cpu-cooler-8th-gen-asetek-pump-3-x-argb-fans-anime-matrix-led-display-white-edition",
+            "{{URL_3}}/product/corsair-vengeance-lpx-16gb-kit-2-x-8gb-ddr4-3000mhz-pc4-24000-cl16-xmp-2-0-dimm-memory"
+          ]
+        },
+        "user_details": {
+          "name": "Jessica Morgan",
+          "street": "Maple Avenue",
+          "house_number": "742",
+          "zip": "60614",
+          "state": "IL",
+          "country": "USA",
+          "email": "jessica.morgan@yahoo.com"
+        },
+        "payment_info": {
+          "card": "4242424242424242",
+          "cvv": "123",
+          "expiry_date": "12/28"
+        }
+      },
+      {
+        "id": "Webmall_EndToEnd_Task8",
+        "category": "FindAndOrder",
+        "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n<task>\\nFind the cheapest offer for the Be Quiet! Pure Base 500 Gaming Case and the cheapest offer for a PC PSU with more than 550 W, add the respective cheapest offer to the shopping cart and complete the checkout process with these items. Add the products on page {{product_url}} to the shopping cart and complete the checkout process. Pay via credit card using the following information: Address: {{name}}, {{email}}, {{street}}, {{house_number}}, {{zip}}, {{state}}, {{country}}, Credit card number: {{card}}, CVV: {{cvv}}, expiry date: {{expiry_date}}.\\n</task>",
+        "motivation": "Assess the agent's ability to handle the complexity of a whole end-to-end webshopping process.",
+        "relevant_offers": {
+          "shop1": [],
+          "shop2": [
+            {
+              "webmall_id": "memorysmithcomputing.uk_63",
+              "name": "Be Quiet! Pure Base 500 Gaming Case with Window, ATX, 2 x Pure Wings 2 Fans, PSU Shroud, Black",
+              "description": "<p>be quiet! Pure Base 500 Window Black combines customizable and silence features with a compact and sophisticated design. Exchangeable top cover for silent or high-performance systems. Two preinstalled Pure Wings 2 140mm fans. Insulation mats on the front, sides and the regular top cover. Water cooling ready for radiators of up to 360mm. Generous space for high-end graphics cards and large coolers. Various options to install up to five SSDs. PSU shroud and smart cable routing options provide a neat interior. Easy PSU installation from the back of the case. Side panel made of tempered glass.</p>",
+              "price": 77.56,
+              "price_currency": "EUR",
+              "category": "Hardware > PC Components > Cases",
+              "cluster_id": 285852,
+              "name_normalized": "Be Quiet! Pure Base 500 Gaming Case",
+              "product_url": "{{URL_2}}/product/be-quiet-pure-base-500-gaming-case-with-window-atx-2-x-pure-wings-2-fans-psu-shroud-black",
+              "product_id": 1036,
+              "shop_id": 2,
+              "shop": "memorysmithcomputing.uk_cleaned.json",
+              "sim_id": 20,
+              "woocommerce_id": 3320
+            },
+            {
+              "webmall_id": "memorysmithcomputing.uk_237",
+              "name": "Fractal Design 560W ION+ 2 PSU, Fully Modular, Fluid Dynamic Fan, 80+ Platinum, UltraFlex Wires, Whisper-quiet Mode",
+              "description": "<p>The Ion+ 2 Platinum is a high-performance fully modular PSU with whisper-quiet operation, enhanced cable flexibility, and superior output quality. It features a user-selectable semi-passive Zero RPM mode for silent operation under light loads and a custom-tailored 140 mm fan for quiet performance even under heavy load.</p>",
+              "price": 107.15,
+              "price_currency": "EUR",
+              "category": "Hardware > PC Components > Power Supplies",
+              "cluster_id": 878755,
+              "name_normalized": "Fractal Design 560W ION+ 2 PSU",
+              "product_url": "{{URL_2}}/product/fractal-design-560w-ion-2-psu-fully-modular-fluid-dynamic-fan-80-platinum-ultraflex-wires-whisper-quiet-mode",
+              "product_id": 1210,
+              "shop_id": 2,
+              "shop": "memorysmithcomputing.uk_cleaned.json",
+              "sim_id": 80,
+              "woocommerce_id": 3348
+            }
+          ],
+          "shop3": [],
+          "shop4": []
+        },
+        "simlar_but_irrelevant_offers": {
+          "shop1": [
+            {
+              "webmall_id": "xcase.co.uk_236",
+              "name": "Be Quiet! Pure Base 500 Gaming Case with Window, ATX, No PSU, 2 x Pure Wings 2 Fans, PSU Shroud, Black",
+              "description": "<p>be quiet! Pure Base 500 Window Black combines customizable and silence features with a compact and sophisticated design. It includes two preinstalled Pure Wings 2 fans, insulation mats for noise dampening, and is water cooling ready for radiators of up to 360mm.</p>",
+              "price": 79.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Cases > Be Quiet!",
+              "cluster_id": 285852,
+              "name_normalized": "Be Quiet! Pure Base 500 Gaming Case",
+              "product_url": "{{URL_1}}/product/be-quiet-pure-base-500-gaming-case-with-window-atx-no-psu-2-x-pure-wings-2-fans-psu-shroud-black",
+              "product_id": 218,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 20,
+              "woocommerce_id": 1753
+            },
+            {
+              "webmall_id": "xcase.co.uk_537",
+              "name": "GameMax 550W GP550 White PSU, Fully Wired, 80+ Bronze, Power Lead Not Included",
+              "description": "<p>GP550 White 550W 80 Plus Bronze Wired Power Supply. The GameMax GP-Series offers high efficiency with up to 85% efficiency, a 140mm ultra-quiet fan, and a stylish white design perfect for gamers. It features a single +12V rail for high compatibility, top-tier circuit protections, and comes with a 2-year warranty.</p>",
+              "price": 59.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Power Supply > GameMax",
+              "cluster_id": 1221718,
+              "name_normalized": "GameMax 550W GP550 PSU",
+              "product_url": "{{URL_1}}/product/gamemax-550w-gp550-white-psu-fully-wired-80-bronze-power-lead-not-included",
+              "product_id": 477,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 223,
+              "woocommerce_id": 1875
+            },
+            {
+              "webmall_id": "xcase.co.uk_652",
+              "name": "Asus 1200W ROG Thor Platinum II PSU, Double Ball Bearing Fan, Fully Modular, 80+ Platinum, RGB Lighting, OLED Display, PCIe 5.0, Lambda A++",
+              "description": "<p>ROG Thor 1200W Platinum II is the quietest PSU in its class, featuring Lambda A++ Certification, 80 Plus Platinum efficiency, and an OLED display for real-time power monitoring. Built with premium components and a 135mm Axial-tech fan for optimal cooling and noise reduction.</p>",
+              "price": 299.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Power Supply > Asus",
+              "cluster_id": 878694,
+              "name_normalized": "Asus ROG Thor 1200W Platinum II PSU",
+              "product_url": "{{URL_1}}/product/asus-1200w-rog-thor-platinum-ii-psu-double-ball-bearing-fan-fully-modular-80-platinum-rgb-lighting-oled-display-pcie-5-0-lambda-a",
+              "product_id": 572,
+              "shop_id": 1,
+              "shop": "xcase.co.uk_cleaned.json",
+              "sim_id": 5,
+              "woocommerce_id": 1749
+            }
+          ],
+          "shop2": [],
+          "shop3": [
+            {
+              "webmall_id": "kovendor.co.uk_125",
+              "name": "Be Quiet! Pure Base 500 Gaming Case with Window, ATX, 2 x Pure Wings 2 Fans, PSU Shroud, Black",
+              "description": "<p>Be Quiet! Pure Base 500 Gaming Case with window, supports ATX, Micro ATX, and Mini ITX motherboards. Includes 2 x Pure Wings 2 fans and features a PSU shroud.</p>",
+              "price": 79.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Cases",
+              "cluster_id": 285852,
+              "name_normalized": "Be Quiet! Pure Base 500 Gaming Case",
+              "product_url": "{{URL_3}}/product/be-quiet-pure-base-500-gaming-case-with-window-atx-2-x-pure-wings-2-fans-psu-shroud-black",
+              "product_id": 1532,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 20,
+              "woocommerce_id": 1034
+            },
+            {
+              "webmall_id": "kovendor.co.uk_496",
+              "name": "Fractal Design 560W ION+ 2 PSU, Fully Modular, Fluid Dynamic Fan, 80+ Platinum, UltraFlex Wires, Whisper-quiet Mode",
+              "description": "<p>Fractal Design 560W ION+ 2 PSU features fully modular design, whisper-quiet operation, and 80+ Platinum certification for high efficiency.</p>",
+              "price": 109.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Power Supplies",
+              "cluster_id": 878755,
+              "name_normalized": "Fractal Design 560W ION+ 2 PSU",
+              "product_url": "{{URL_3}}/product/fractal-design-560w-ion-2-psu-fully-modular-fluid-dynamic-fan-80-platinum-ultraflex-wires-whisper-quiet-mode",
+              "product_id": 1903,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 80,
+              "woocommerce_id": 1095
+            },
+            {
+              "webmall_id": "kovendor.co.uk_43",
+              "name": "Asus 1200W ROG Thor Platinum II PSU, Double Ball Bearing Fan, Fully Modular, 80+ Platinum, RGB Lighting, OLED Display, PCIe 5.0, Lambda A++",
+              "description": "<p>Asus ROG Thor Platinum II PSU with 1200W power, fully modular design, 80+ Platinum certification, and RGB lighting for high-performance builds.</p>",
+              "price": 299.99,
+              "price_currency": "EUR",
+              "category": "PC Components > Power Supplies",
+              "cluster_id": 878694,
+              "name_normalized": "Asus ROG Thor 1200W PSU",
+              "product_url": "{{URL_3}}/product/asus-1200w-rog-thor-platinum-ii-psu-double-ball-bearing-fan-fully-modular-80-platinum-rgb-lighting-oled-display-pcie-5-0-lambda-a",
+              "product_id": 1450,
+              "shop_id": 3,
+              "shop": "kovendor.co.uk_cleaned.json",
+              "sim_id": 5,
+              "woocommerce_id": 1019
+            }
+          ],
+          "shop4": [
+            {
+              "webmall_id": "rog.co.uk_89",
+              "name": "GameMax 550W GP550 White PSU, Fully Wired, 80+ Bronze, Power Lead Not Included",
+              "description": "<p>GameMax GP550 White 550W 80 Plus Bronze Wired Power Supply offers high efficiency with up to 85% efficiency, a 140mm ultra-quiet fan, and a stylish design perfect for gamers. It features a single +12V rail for high compatibility and includes top-tier circuit protections for safety.</p>",
+              "price": 59.99,
+              "price_currency": "EUR",
+              "category": "Power Supplies > GameMax > PSUs",
+              "cluster_id": 1221718,
+              "name_normalized": "GameMax 550W GP550 White PSU",
+              "product_url": "{{URL_4}}/product/gamemax-550w-gp550-white-psu-fully-wired-80-bronze-power-lead-not-included",
+              "product_id": 2188,
+              "shop_id": 4,
+              "shop": "rog.co.uk_cleaned.json",
+              "sim_id": 223,
+              "woocommerce_id": 1375
+            }
+          ]
+        },
+        "correct_answer": {
+          "type": "checkout",
+          "answers": [
+              "{{URL_2}}/product/be-quiet-pure-base-500-gaming-case-with-window-atx-2-x-pure-wings-2-fans-psu-shroud-black",
+              "{{URL_2}}/product/fractal-design-560w-ion-2-psu-fully-modular-fluid-dynamic-fan-80-platinum-ultraflex-wires-whisper-quiet-mode"
+          ]
+        },
+        "user_details": {
+          "name": "Jessica Morgan",
+          "street": "Maple Avenue",
+          "house_number": "742",
+          "zip": "60614",
+          "state": "IL",
+          "country": "USA",
+          "email": "jessica.morgan@yahoo.com"
+        },
+        "payment_info": {
+          "card": "4242424242424242",
+          "cvv": "123",
+          "expiry_date": "12/28"
+        }
+      }
+    ]
   }
 ]
