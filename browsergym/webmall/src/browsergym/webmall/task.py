@@ -38,6 +38,8 @@ class WebMallTask(AbstractBrowserTask):
         with open(json_path, 'r') as f:
             self.task_sets = json.load(f)
 
+        self.task_config = _get_task(self.task_sets, task_id.split(".")[1])
+
         replacements = [
             ("{{URL_1}}", self.urls["SHOP1_URL"]),
             ("{{URL_2}}", self.urls["SHOP2_URL"]),
@@ -50,15 +52,29 @@ class WebMallTask(AbstractBrowserTask):
             ("Shop4", "Hardware Cafe")
         ]
 
-        self.task_sets = _replace_placeholders(self.task_sets, replacements)
+        # For chekout tasks and end-to-end tasks, inject user details and payment info
+        if self.task_config["category"] == "Checkout" or self.task_config["category"] == "FindAndOrder":
+            # Add user details and payment info to replacements
+            user_details = self.task_config.get("user_details", {})
+            payment_info = self.task_config.get("payment_info", {})
+            if user_details:
+                replacements.append(("{{name}}", user_details.get("name", "")))
+                replacements.append(("{{email}}", user_details.get("email", "")))
+                replacements.append(("{{street}}", user_details.get("street", "")))
+                replacements.append(("{{house_number}}", user_details.get("house_number", "")))
+                replacements.append(("{{zip}}", user_details.get("zip", "")))
+                replacements.append(("{{state}}", user_details.get("state", "")))
+                replacements.append(("{{country}}", user_details.get("country", "")))
+            if payment_info:
+                replacements.append(("{{card}}", payment_info.get("card", "")))
+                replacements.append(("{{cvv}}", payment_info.get("cvv", "")))
+                replacements.append(("{{expiry_date}}", payment_info.get("expiry_date", "")))
 
-
-        self.task_config = _get_task(self.task_sets, task_id.split(".")[1])
-
-        # For checkout tasks, inject product url
+        # For checkout tasks only, inject product url
         if self.task_config["category"] == "Checkout":
-            # Replace {{product_url}} in task instruction
-            self.task_config = _replace_placeholders(self.task_config, [("{{product_url}}", self.task_config["correct_answer"]["answers"][0])])
+            replacements.append(("{{product_url}}", self.task_config["correct_answer"]["answers"][0]))
+
+        self.task_config = _replace_placeholders(self.task_config, replacements)
 
         self.checklist = Checklist(self.task_config, task_id=self.task_id, urls=self.urls)
     
