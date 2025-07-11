@@ -40,52 +40,49 @@ class Checklist:
                 ))
                 checkout_answer = answer
                 # Cart goes into product_page_cps
-                cart_cps.append(Checkpoint(id="answer" + str(i), value=answer, type="cart"))
+                cart_cps.append(Checkpoint(id="cart" + str(i), value=answer, type="cart"))
             else:
                 answer_cps.append(Checkpoint(id="answer" + str(i), value=answer, type=answer_type))
 
         # --- Step 3: Normalize weights ---
 
-        # (1) Correct answers → 0.5
+        # (1) Correct answers → 0.8
         if answer_cps:
             for cp in answer_cps:
-                cp.weight = 0.5 / len(answer_cps)
+                cp.weight = 0.8 / len(answer_cps)
         self.checkpoints.extend(answer_cps)
 
         # (2) Visiting each shop → 0.2
-        shop_visit_cps = [
-            Checkpoint(id="visit_shop1", value=urls["SHOP1_URL"], type="url"),
-            Checkpoint(id="visit_shop2", value=urls["SHOP2_URL"], type="url"),
-            Checkpoint(id="visit_shop3", value=urls["SHOP3_URL"], type="url"),
-            Checkpoint(id="visit_shop4", value=urls["SHOP4_URL"], type="url"),
-        ]
+        # shop_visit_cps = [
+        #     Checkpoint(id="visit_shop1", value=urls["SHOP1_URL"], type="url"),
+        #     Checkpoint(id="visit_shop2", value=urls["SHOP2_URL"], type="url"),
+        #     Checkpoint(id="visit_shop3", value=urls["SHOP3_URL"], type="url"),
+        #     Checkpoint(id="visit_shop4", value=urls["SHOP4_URL"], type="url"),
+        # ]
 
         # For checkout task: only need to visit single shop
-        if checkout_answer is not None:
-            shop_visit_cps = [cp for cp in shop_visit_cps if getattr(cp, "value", None) in checkout_answer]
+        # if checkout_answer is not None:
+        #     shop_visit_cps = [cp for cp in shop_visit_cps if getattr(cp, "value", None) in checkout_answer]
  
-        for cp in shop_visit_cps:
-            cp.weight = 0.2 / len(shop_visit_cps)
-        self.checkpoints.extend(shop_visit_cps)
+        # for cp in shop_visit_cps:
+        #     cp.weight = 0.2 / len(shop_visit_cps)
+        # self.checkpoints.extend(shop_visit_cps)
 
-        # (3) Product page visits (task_config + cart if checkout)
+        # (3) Product page visits (task_config + cart if checkout) → 0.2
         for shop_key, offers in task_config["relevant_offers"].items():
             for offer in offers:
                 if "product_url" in offer:
-                    product_url = offer["product_url"].replace("http://localhost:SHOP1_PORT", urls["SHOP1_URL"]) \
-                                                    .replace("http://localhost:SHOP2_PORT", urls["SHOP2_URL"]) \
-                                                    .replace("http://localhost:SHOP3_PORT", urls["SHOP3_URL"]) \
-                                                    .replace("http://localhost:SHOP4_PORT", urls["SHOP4_URL"])
+                    product_url = offer["product_url"]
                     checkpoint_id = f"visit_product_{offer['webmall_id']}"
                     product_page_cps.append(Checkpoint(id=checkpoint_id, value=product_url, type="url"))
 
         # Add cart checkpoints (if any) to product_page group
         product_page_cps.extend(cart_cps)
 
-        # Assign weight: product page group → 0.3
+        # Assign weight: product page group → 0.2
         if product_page_cps:
             for cp in product_page_cps:
-                cp.weight = 0.3 / len(product_page_cps)
+                cp.weight = 0.2 / len(product_page_cps)
         self.checkpoints.extend(product_page_cps)
 
 
