@@ -73,12 +73,12 @@ class WebMallTask(AbstractBrowserTask):
         logger.info(f"Navigating to start url: {start_url}")
         page.goto(start_url, timeout=50000)
 
-        specific_instruction = self.task_config.get(f"instruction")
+        general_instruction = self.task_config.get("instruction", "")
+        specific_instruction = self.task_config.get("task", "")
+        general_instruction = general_instruction.replace('\\n', '\n')
+        specific_instruction = specific_instruction.replace('\\n', '\n')
 
-        if isinstance(specific_instruction, str):
-            specific_instruction = specific_instruction.replace('\\n', '\n')
-
-        return f"{specific_instruction}", {}
+        return general_instruction + specific_instruction, {}
 
     def teardown(self) -> None:
         pass
