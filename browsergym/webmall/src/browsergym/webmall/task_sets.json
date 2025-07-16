@@ -1464,7 +1464,8 @@
         "correct_answer": {
           "type": "string",
           "answers": [
-            "{{URL_3}}/product/asrock-b550-phantom-gaming-4-amd-b550-am4-atx-4-ddr4-hdmi-xfire-pcie4-m-2"
+            "{{URL_3}}/product/asrock-b550-phantom-gaming-4-amd-b550-am4-atx-4-ddr4-hdmi-xfire-pcie4-m-2",
+            "{{URL_4}}/product/asrock-b550-phantom-gaming-4-amd-b550-am4-atx-4-ddr4-hdmi-xfire-pcie4-m-2"
           ]
         }
       },
@@ -2350,9 +2351,9 @@
           "type": "string",
           "answers": [
             "{{URL_1}}/product/samsung-870-evo-2-5-250-gb-sata-iii-v-nand",
-            "{{URL_1}}/samsung-1tb-870-evo-ssd-2-5-sata3-v-nand-r-w-560-530-mb-s-98k-88k-iops-7mm",
+            "{{URL_1}}/product/samsung-1tb-870-evo-ssd-2-5-sata3-v-nand-r-w-560-530-mb-s-98k-88k-iops-7mm",
             "{{URL_2}}/product/samsung-870-evo-2tb-2-5-sata-iii-6gb-s-ssd-560r-530w-mb-s-mz-77e2t0bw",
-            "{{URL_3}}/samsung-4tb-870-evo-ssd-2-5-sata3-v-nand-r-w-560-530-mb-s-98k-88k-iops-7mm"
+            "{{URL_3}}/product/samsung-4tb-870-evo-ssd-2-5-sata3-v-nand-r-w-560-530-mb-s-98k-88k-iops-7mm"
           ]
         }
       },
@@ -3746,21 +3747,7 @@
               "woocommerce_id": 1196
             }
           ],
-          "shop4": [
-            {
-              "cluster_id": 5558857,
-              "webmall_id": "refurb-tracker.com_475",
-              "shop_id": 4,
-              "name": "Refurbished Apple Watch Series 8 GPS + Cellular, 41mm Graphite Stainless Steel Case with S/M Midnight Sport Band",
-              "description": "Originally released September 2022\\nS8 SiP with 64-bit dual-core processor\\nWater resistant to 50 metres¹\\nAlways-On Retina LTPO OLED display (Up to 1000 nits brightness)\\n802.11b/g/n 2.4GHz and 5GHz\\nBluetooth 5.3\\nBuilt-in rechargeable lithium-ion battery (Up to 18 hours²)\\nThird-generation optical heart sensor\\nHigh-g accelerometer\\nHigh dynamic range gyroscope\\nAmbient light sensor\\nCapacity 32GB\\nCeramic and sapphire crystal back",
-              "image": null,
-              "review": null,
-              "price": 250.0,
-              "pricecurrency": "€",
-              "category": null,
-              "woocommerce_id": 1431
-            }
-          ]
+          "shop4": []
         },
         "correct_answer": {
           "type": "string",
@@ -3768,7 +3755,8 @@
             "{{URL_1}}/product/apple-watch-series-7-gps-41mm-green-with-trefoil-sport-strap",
             "{{URL_2}}/product/apple-watch-series-8-gps-cellular-45mm-graphite-stainless-steel-case-with-midnight-sport-band-regular",
             "{{URL_3}}/product/apple-watch-series-8-gps-41mm-silver-aluminium-case-with-white-sport-band-regular",
-            "{{URL_4}}/product/apple-watch-series-8-gps-41mm-smart-watch-w-starlight-aluminum-case-with-starlight-sport-band-s-m"
+            "{{URL_4}}/product/apple-watch-series-8-gps-41mm-smart-watch-w-starlight-aluminum-case-with-starlight-sport-band-s-m",
+            "{{URL_4}}/product/refurbished-apple-watch-series-8-gps-cellular-41mm-graphite-stainless-steel-case-with-s-m-midnight-sport-band"
           ]
         }
       },
@@ -3937,7 +3925,7 @@
         "id": "Webmall_Best_Fit_Specific_Task4",
         "category": "Best_Fit_Specific",
         "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n",
-        "task": "<task>\\nFind all offers for liquid cpu coolers from ASUS which can display GIFs.\\n</task>",
+        "task": "<task>\\nFind all offers for AIO liquid cpu coolers from ASUS which can display GIFs.\\n</task>",
         "motivation": "Measure the agent's ability to correctly interpret structured requirements and differentiate between highly similar products.",
         "relevant_offers": {
           "shop1": [
@@ -5972,7 +5960,9 @@
             "{{URL_4}}/product/fractal-design-define-7-compact-dark-tg-gaming-case-w-dark-tint-glass-window-atx-2-fans-sound-dampening-ventilated-psu-shroud-usb-c",
             "{{URL_2}}/product/fractal-design-define-7-compact-dark-tg-gaming-case-w-dark-tint-glass-window-atx-2-fans-sound-dampening-ventilated-psu-shroud-usb-c",
             "{{URL_2}}/product/fractal-design-meshify-2-compact-black-solid-gaming-case-atx-angular-mesh-front-3-fans-detachable-front-filter-usb-c",
-            "{{URL_4}}/product/fractal-design-meshify-2-mini-black-tg-gaming-case-w-dark-glass-window-micro-atx-angular-mesh-usb-c-331mm-gpu-280mm-radiator-support"
+            "{{URL_4}}/product/fractal-design-meshify-2-mini-black-tg-gaming-case-w-dark-glass-window-micro-atx-angular-mesh-usb-c-331mm-gpu-280mm-radiator-support",
+            "{{URL_1}}/product/fractal-design-meshify-2-black-solid-gaming-case-e-atx-angular-mesh-front-3-fans-fan-hub-detachable-front-filter-usb-c",
+            "{{URL_1}}/product/fractal-design-meshify-2-mini-black-tg-gaming-case-w-dark-glass-window-micro-atx-angular-mesh-usb-c-331mm-gpu-280mm-radiator-support"
           ]
         }
       }
@@ -6569,7 +6559,8 @@
             "{{URL_4}}/product/smartphone-samsung-galaxy-s24-5g-12-256gb-yellow-amber-yellow-sm-s926bzydeue",
             "{{URL_3}}/product/samsung-galaxy-s24-5g-s921b-ds-128gb-cobalt-violet-android-14-0-smartphone",
             "{{URL_3}}/product/samsung-galaxy-s24-5g-s926b-ds-256gb-cobalt-violet-android-14-0-smartphone",
-            "{{URL_4}}/product//product/smartphone-samsung-galaxy-s24-5g-12-256gb-purple-cobalt-violet-sm-s926bzvdeue"
+            "{{URL_4}}/product/smartphone-samsung-galaxy-s24-5g-12-256gb-purple-cobalt-violet-sm-s926bzvdeue",
+            "{{URL_1}}/product/smartphone-samsung-galaxy-a25-5g-6-128gb-yellow-sm-a256bzydeue"
           ]
         }
       },
@@ -7847,7 +7838,12 @@
         "correct_answer": {
           "type": "string",
           "answers": [
-            "{{URL_4}}/product/adata-xpg-lancer-blade-rgb-32gb-kit-2-x-16gb-ddr5-6000mhz-cl30-1-35v-ecc-pmic-xmp-3-0-amd-expo-dimm-memory"
+            "{{URL_4}}/product/adata-xpg-lancer-blade-rgb-32gb-kit-2-x-16gb-ddr5-6000mhz-cl30-1-35v-ecc-pmic-xmp-3-0-amd-expo-dimm-memory",
+            "{{URL_1}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-6200mhz-pc5-49600-cl36-1-4v-xmp-3-0-pmic-dimm-memory",
+            "{{URL_1}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl40-1-25v-xmp-3-0-pmic-dimm-memory-black",
+            "{{URL_3}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-6000mhz-pc5-48000-cl36-1-25v-xmp-3-0-pmic-dimm-memory-white",
+            "{{URL_3}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl36-1-25v-xmp-3-0-pmic-dimm-memory",
+            "{{URL_3}}/product/corsair-dominator-platinum-rgb-32gb-kit-2-x-16gb-ddr5-6200mhz-pc5-49600-cl36-1-3v-xmp-3-0-pmic-dimm-memory"
           ]
         }
       },
@@ -7855,7 +7851,7 @@
         "id": "Webmall_Best_Fit_Vague_Task5",
         "category": "Best_Fit_Vague",
         "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n",
-        "task": "<task>\\nFind all offers for ASUS PRIME motherboards with sockets older than AM5.\\n</task>",
+        "task": "<task>\\nFind all offers for ASUS PRIME motherboards with AMD sockets older than AM5.\\n</task>",
         "motivation": "Assess the agent's capability to interpret loosely defined requirements and make appropriate selections.",
         "relevant_offers": {
           "shop1": [],
@@ -9536,8 +9532,7 @@
         "correct_answer": {
           "type": "string",
           "answers": [
-            "{{URL_1}}/product/asrock-b550-steel-legend-amd-b550-am4-atx-4-ddr4-hdmi-dp-xfire-2-5gb-lan-pcie4-rgb-lighting-m-2",
-            "{{URL_3}}/product/asrock-b550-steel-legend-amd-b550-am4-atx-4-ddr4-hdmi-dp-xfire-2-5gb-lan-pcie4-rgb-lighting-m-2"
+            "{{URL_4}}/product/asrock-b660m-pro-rs-intel-b660-1700-micro-atx-4-ddr4-hdmi-dp-pcie4-rgb-2x-m-2"
           ]
         }
       },
@@ -10455,7 +10450,8 @@
           "answers": [
             "{{URL_2}}/product/samsung-galaxy-a25-5g-a256b-dual-sim-128gb-blue-android-14-0-smartphone",
             "{{URL_2}}/product/samsung-galaxy-a35-5g-a356b-dual-sim-256gb-awesome-iceblue-android-14-smartphone",
-            "{{URL_2}}/product/samsung-galaxy-a55-5g-a556b-dual-sim-128gb-ee-navy-android-14-0-smartphone"
+            "{{URL_2}}/product/samsung-galaxy-a55-5g-a556b-dual-sim-128gb-ee-navy-android-14-0-smartphone",
+            "{{URL_2}}/product/samsung-galaxy-a15-5g-a156b-dual-sim-128gb-blue-black-android-14-0-smartphone"
           ]
         }
       },
@@ -11829,6 +11825,7 @@
         "correct_answer": {
           "type": "cart",
           "answers": [
+            "{{URL_2}}/product/gamemax-iceburg-360mm-argb-liquid-cpu-cooler-12cm-argb-pwm-fans-infinity-mirror-rgb-rotatable-pump-head",
             "{{URL_3}}/product/gamemax-iceburg-360mm-argb-liquid-cpu-cooler-12cm-argb-pwm-fans-infinity-mirror-rgb-rotatable-pump-head"
           ]
         }
