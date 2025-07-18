@@ -1637,7 +1637,8 @@
           "type": "string",
           "answers": [
             "{{URL_4}}/product/hama-high-speed-hdmi-cable-3-metres-supports-4k",
-            "{{URL_1}}/product/hama-high-speed-hdmi-cable-3-metres-supports-4k"
+            "{{URL_1}}/product/hama-high-speed-hdmi-cable-3-metres-supports-4k",
+            "{{URL_2}}/product/hama-high-speed-hdmi-cable-3-metres-supports-4k"
           ]
         }
       },
@@ -6553,7 +6554,6 @@
           "type": "string",
           "answers": [
             "{{URL_3}}/product/samsung-galaxy-s24-5g-s926b-ds-256gb-amber-yellow-android-14-0-smartphone",
-            "{{URL_2}}/product/samsung-galaxy-a35-5g-a356b-dual-sim-256gb-awesome-iceblue-android-14-smartphone",
             "{{URL_2}}/product/samsung-galaxy-s24-ultra-5g-s928b-ds-256gb-titanium-yellow-android-14-smartphone",
             "{{URL_3}}/product/samsung-galaxy-s24-5g-s921b-ds-256gb-amber-yellow-android-14-0-smartphone",
             "{{URL_4}}/product/smartphone-samsung-galaxy-s24-5g-12-256gb-yellow-amber-yellow-sm-s926bzydeue",
@@ -7843,7 +7843,10 @@
             "{{URL_1}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl40-1-25v-xmp-3-0-pmic-dimm-memory-black",
             "{{URL_3}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-6000mhz-pc5-48000-cl36-1-25v-xmp-3-0-pmic-dimm-memory-white",
             "{{URL_3}}/product/corsair-vengeance-rgb-32gb-kit-2-x-16gb-ddr5-5600mhz-pc5-44800-cl36-1-25v-xmp-3-0-pmic-dimm-memory",
-            "{{URL_3}}/product/corsair-dominator-platinum-rgb-32gb-kit-2-x-16gb-ddr5-6200mhz-pc5-49600-cl36-1-3v-xmp-3-0-pmic-dimm-memory"
+            "{{URL_3}}/product/corsair-dominator-platinum-rgb-32gb-kit-2-x-16gb-ddr5-6200mhz-pc5-49600-cl36-1-3v-xmp-3-0-pmic-dimm-memory",
+            "{{URL_3}}/product/corsair-dominator-platinum-rgb-32gb-kit-2-x-16gb-ddr5-6200mhz-pc5-49600-cl36-1-4v-xmp-3-0-pmic-dimm-memory",
+            "{{URL_3}}/product/corsair-vengeance-rgb-64gb-kit-4-x-16gb-ddr5-5600mhz-pc5-44800-cl36-1-25v-xmp-3-0-pmic-dimm-memory",
+            "{{URL_3}}/product/kingston-fury-beast-rgb-32gb-kit-2-x-16gb-ddr5-6000mhz-pc5-48000-cl36-1-35v-ecc-xmp-3-0-pmic-amd-expo-dimm-memory"
           ]
         }
       },
@@ -8019,7 +8022,8 @@
           "answers": [
             "{{URL_3}}/product/asus-prime-a520m-a-ii-csm-corporate-stable-model-amd-a520-am4-micro-atx-4-ddr4-vga-hdmi-dp-m-2",
             "{{URL_4}}/product/asus-prime-b450m-k-ii-amd-b450-am4-micro-atx-2-ddr4-vga-dvi-hdmi-led-lighting-m-2",
-            "{{URL_3}}/product/asus-prime-b450m-k-ii-amd-b450-am4-micro-atx-2-ddr4-vga-dvi-hdmi-led-lighting-m-2"
+            "{{URL_3}}/product/asus-prime-b450m-k-ii-amd-b450-am4-micro-atx-2-ddr4-vga-dvi-hdmi-led-lighting-m-2",
+            "{{URL_4}}/product/asus-prime-a520m-a-ii-csm-corporate-stable-model-amd-a520-am4-micro-atx-4-ddr4-vga-hdmi-dp-m-2"
           ]
         }
       },
@@ -8200,7 +8204,7 @@
         "id": "Webmall_Best_Fit_Vague_Task7",
         "category": "Best_Fit_Vague",
         "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n",
-        "task": "<task>\\nFind all offers for an adapter so I can connect my monitorm which does not support HDMI, to an HDMI cable. The monitor's connector looks quite similar to HDMI.\\n</task>",
+        "task": "<task>\\nFind all offers for an adapter so I can connect my monitor, which does not support HDMI, to an HDMI cable. The monitor's connector looks quite similar to HDMI.\\n</task>",
         "motivation": "Assess the agent's capability to interpret loosely defined requirements and make appropriate selections.",
         "relevant_offers": {
           "shop1": [
@@ -8336,7 +8340,9 @@
             "{{URL_1}}/product/sandberg-displayport-male-to-female-hdmi-converter-cable-black-5-year-warranty",
             "{{URL_1}}/product/jedel-displayport-male-to-hdmi-female-converter-cable-black",
             "{{URL_2}}/product/sandberg-displayport-male-to-female-hdmi-converter-cable-black-5-year-warranty",
-            "{{URL_2}}/product/jedel-displayport-male-to-hdmi-female-converter-cable-black"
+            "{{URL_2}}/product/jedel-displayport-male-to-hdmi-female-converter-cable-black",
+            "{{URL_3}}/product/displayport-to-hdmi-adapter",
+            "{{URL_1}}/product/displayport-male-to-hdmi-female-converter-display-adapter-cable-1080p-full-hd-audio-video"
           ]
         }
       },
@@ -8344,7 +8350,7 @@
         "id": "Webmall_Best_Fit_Vague_Task8",
         "category": "Best_Fit_Vague",
         "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n",
-        "task": "<task>\\nFind all offers for keyboards that are best suited for working with a laptop remotely from various locations.\\n</task>",
+        "task": "<task>\\nFind all offers for compact keyboards that are best suited for working with a laptop remotely from various locations.\\n</task>",
         "motivation": "Assess the agent's capability to interpret loosely defined requirements and make appropriate selections.",
         "relevant_offers": {
           "shop1": [
@@ -8592,7 +8598,8 @@
           "type": "string",
           "answers": [
             "{{URL_4}}/product/asus-rog-falchion-rx-low-profile-compact-65-mechanical-rgb-gaming-keyboard-wireless-usb-rog-rx-red-switches-per-key-rgb-lighting-touch-panel-430-hour-battery-life",
-            "{{URL_1}}/product/asus-rog-falchion-rx-low-profile-compact-65-mechanical-rgb-gaming-keyboard-wireless-usb-rog-rx-red-switches-per-key-rgb-lighting-touch-panel-430-hour-battery-life"
+            "{{URL_1}}/product/asus-rog-falchion-rx-low-profile-compact-65-mechanical-rgb-gaming-keyboard-wireless-usb-rog-rx-red-switches-per-key-rgb-lighting-touch-panel-430-hour-battery-life",
+            "{{URL_3}}/product/apple-wireless-keyboard-mc184ll-a"
           ]
         }
       }
@@ -8614,7 +8621,7 @@
         "id": "Webmall_Cheapest_Best_Fit_Specific_Task1",
         "category": "Cheapest_Best_Fit_Specific",
         "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n",
-        "task": "<task>\\nFind the cheapest offer for a Xbox gaming console with at least 512gb disk space in black. If multiple offers share the lowest price, return all of them.\\n</task>",
+        "task": "<task>\\nFind the cheapest offer for a Xbox gaming console with at least 512gb disk space in white. If multiple offers share the lowest price, return all of them.\\n</task>",
         "motivation": "Test the agent's ability to balance feature requirements and price considerations.",
         "relevant_offers": {
           "shop1": [],
@@ -9439,7 +9446,7 @@
         "correct_answer": {
           "type": "string",
           "answers": [
-            "{{URL_1}}/product/kingston-8gb-ddr4-3200mhz-pc4-25600-cl22-dimm-memory"
+            "{{URL_3}}/product/crucial-8gb-ddr4-3200-udimm-pc"
           ]
         }
       },
@@ -9608,8 +9615,7 @@
         "correct_answer": {
           "type": "string",
           "answers": [
-            "{{URL_3}}/product/pny-rtxa1000-professional-graphics-card-8gb-ddr6-4-minidp-1-4-4x-dp-adapters-2304-cuda-cores-low-profile-bracket-included-retail",
-            "{{URL_1}}/product/pny-rtxa400-professional-graphics-card-4gb-ddr6-4-minidp-1-4-4x-dp-adapters-768-cuda-cores-low-profile-bracket-included-retail"
+            "{{URL_3}}/product/pny-geforce-xlr8-rtx-2060-6gb-gaming-overclocked-edition-dual-fan"
           ]
         }
       },
@@ -9617,7 +9623,7 @@
         "id": "Webmall_Cheapest_Best_Fit_Specific_Task8",
         "category": "Cheapest_Best_Fit_Specific",
         "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n",
-        "task": "<task>\\nFind the cheapest offer a PC PSU with more than 550 W. If multiple offers share the lowest price, return all of them.\\n</task>",
+        "task": "<task>\\nFind the cheapest offer for a PSU for PCs with more than 550 W. If multiple offers share the lowest price, return all of them.\\n</task>",
         "motivation": "Test the agent's ability to balance feature requirements and price considerations.",
         "relevant_offers": {
           "shop1": [],
@@ -9742,7 +9748,7 @@
         "id": "Webmall_Cheapest_Best_Fit_Specific_Task9",
         "category": "Cheapest_Best_Fit_Specific",
         "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n",
-        "task": "<task>\\nFind the cheapest offer for a gaming case from Antec which uses ARGB for its fan-lighting. If multiple offers share the lowest price, return all of them.\\n</task>",
+        "task": "<task>\\nFind the cheapest offer for a gaming case from Antec with ARGB fans. If multiple offers share the lowest price, return all of them.\\n</task>",
         "motivation": "Test the agent's ability to balance feature requirements and price considerations.",
         "relevant_offers": {
           "shop1": [],
@@ -9833,7 +9839,7 @@
         "id": "Webmall_Cheapest_Best_Fit_Specific_Task10",
         "category": "Cheapest_Best_Fit_Specific",
         "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n",
-        "task": "<task>\\nFind the cheapest offers for mechanical keyboards. If multiple offers share the lowest price, return all of them.\\n</task>",
+        "task": "<task>\\nFind the cheapest offer for a mechanical keyboard. If multiple offers share the lowest price, return all of them.\\n</task>",
         "motivation": "Test the agent's ability to balance feature requirements and price considerations.",
         "relevant_offers": {
           "shop1": [],
@@ -10078,7 +10084,7 @@
         "correct_answer": {
           "type": "string",
           "answers": [
-            "{{URL_3}}/product/asus-rog-strix-scope-ii-nx-snow-mechanical-rgb-gaming-keyboard-rog-nx-snow-linear-switches-sound-dampening-pbt-keycaps-intuitive-controls"
+            "{{URL_3}}/product/nedis-designed-in-netherlands-mechanical-gaming-wired-keyboard-with-multi-color-rgb-modes-and-us-international-layout"
           ]
         }
       }
@@ -10451,7 +10457,7 @@
             "{{URL_2}}/product/samsung-galaxy-a25-5g-a256b-dual-sim-128gb-blue-android-14-0-smartphone",
             "{{URL_2}}/product/samsung-galaxy-a35-5g-a356b-dual-sim-256gb-awesome-iceblue-android-14-smartphone",
             "{{URL_2}}/product/samsung-galaxy-a55-5g-a556b-dual-sim-128gb-ee-navy-android-14-0-smartphone",
-            "{{URL_2}}/product/samsung-galaxy-a15-5g-a156b-dual-sim-128gb-blue-black-android-14-0-smartphone"
+            "{{URL_1}}/product/smartphone-samsung-galaxy-a15-4-128gb-black-sm-a155fzkdeue"
           ]
         }
       },
@@ -10693,7 +10699,7 @@
         "id": "Webmall_Cheapest_Best_Fit_Vague_Task4",
         "category": "Cheapest_Best_Fit_Vague",
         "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n",
-        "task": "<task>\\nFind the cheapest offers for each model of mid-tier series nVidia gaming GPUs. If multiple offers share the lowest price, return all of them.\\n</task>",
+        "task": "<task>\\nFind the cheapest offers for each model of mid-tier nVidia gaming GPUs in the 4000 series. If multiple offers share the lowest price, return all of them.\\n</task>",
         "motivation": "Test the agent’s capability to interpret ambiguous requirements while optimizing for cost.",
         "relevant_offers": {
           "shop1": [
@@ -11172,7 +11178,6 @@
             "{{URL_3}}/product/palit-rtx4070-gamingpro-pcie4-12gb-ddr6x-hdmi-3-dp-2475mhz-clock-rgb-lighting",
             "{{URL_3}}/product/asus-dual-rtx4070-super-oc-white-pcie4-12gb-ddr6x-hdmi-3-dp-2550mhz-clock-overclocked",
             "{{URL_3}}/product/asus-dual-rtx4070-super-pcie4-12gb-ddr6x-hdmi-3-dp-2505mhz-clock",
-            "{{URL_1}}/product/asus-dual-rtx4070-super-evo-oc-pcie4-12gb-ddr6x-hdmi-3-dp-2550mhz-clock-overclocked-white",
             "{{URL_3}}/product/asus-proart-rtx4070-super-oc-pcie4-12gb-ddr6x-hdmi-3-dp-2565mhz-clock-overclocked-compact-2-5-slot-design",
             "{{URL_1}}/product/asus-proart-rtx4070-super-oc-12gb-ddr6x-hdmi-3-dp-2565mhz-clock-overclocked-compact-2-5-slot-design",
             "{{URL_4}}/product/palit-rtx4070-super-jetstream-oc-12gb-ddr6x-hdmi-3-dp-2640mhz-clock-overclocked"
@@ -12306,7 +12311,7 @@
         "id": "Webmall_Find_Compatible_Products_Task1",
         "category": "Compatible_Products",
         "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n",
-        "task": "<task>\\nFind all offers for keyboards with the best visual fit to this case: {{URL_2}}/product/corsair-5000d-airflow-gaming-case-w-glass-window-e-atx-2-x-airguide-fans-high-airflow-front-panel-usb-c-white .\\n</task>",
+        "task": "<task>\\nFind all offers for keyboards with the best visual fit and same color to this case: {{URL_2}}/product/corsair-5000d-airflow-gaming-case-w-glass-window-e-atx-2-x-airguide-fans-high-airflow-front-panel-usb-c-white .\\n</task>",
         "motivation": "Measure the agent’s ability asssess compatibility between products.",
         "relevant_offers": {
           "shop1": [
@@ -13482,7 +13487,7 @@
         "id": "Webmall_Find_Compatible_Products_Task4",
         "category": "Compatible_Products",
         "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n",
-        "task": "<task>\\nFind 32 GB RAM sticks compatible with this motherboard: {{URL_4}}/product/asus-rog-strix-z790-e-gaming-wifi-intel-z790-1700-atx-4-ddr5-hdmi-dp-wi-fi-6e-2-5g-lan-pcie5-rgb-5x-m-2 .\\n</task>",
+        "task": "<task>\\nFind kits with single or multiple 32 GB RAM sticks compatible with this motherboard: {{URL_4}}/product/asus-rog-strix-z790-e-gaming-wifi-intel-z790-1700-atx-4-ddr5-hdmi-dp-wi-fi-6e-2-5g-lan-pcie5-rgb-5x-m-2 .\\n</task>",
         "motivation": "Measure the agent’s ability asssess compatibility between products.",
         "relevant_offers": {
           "shop1": [
@@ -14018,7 +14023,7 @@
         "correct_answer": {
           "type": "string",
           "answers": [
-            "{{URL_4}}/product/sandberg-mini-displayport-male-to-hdmi-female-converter-cable-white-5-year-warranty"
+            "{{URL_2}}/product/spire-mini-displayport-male-to-hdmi-male-converter-1-metre"
           ],
           "product_in_cart": "{{URL_1}}/product/pny-t1000-professional-graphics-card-4gb-ddr6-896-cores-4-minidp-1-4-low-profile-bracket-included-oem-brown-box"
         }
@@ -14747,8 +14752,7 @@
         "correct_answer": {
           "type": "string",
           "answers": [
-            "{{URL_3}}/product/asus-27-frameless-eye-care-monitor-va27dqsb-ips-1920-x-1080-75hz-adaptive-sync-usb-hub-vesa",
-            "{{URL_1}}/product/asus-27-frameless-eye-care-gaming-monitor-va27dqfr-ips-1920-x-1080-1ms-100hz-vga-hdmi-dp-adaptive-sync-vesa"
+            "{{URL_3}}/product/samsung-odyssey-g3-lf27g35tfwuxen-27-gaming-monitor-144hz-1ms-1080p-fhd"
           ],
           "product_in_cart": "{{URL_1}}/product/asus-27-tuf-gaming-monitor-vg279q3a-1920-x-1080-fast-ips-1ms-elmb-180hz-variable-overdrive-99-srgb-vesa"
         }
@@ -15145,9 +15149,7 @@
         "correct_answer": {
           "type": "string",
           "answers": [
-            "{{URL_3}}/product/asus-rog-strix-scope-ii-nx-snow-mechanical-rgb-gaming-keyboard-rog-nx-snow-linear-switches-sound-dampening-pbt-keycaps-intuitive-controls",
-            "{{URL_1}}/product/asus-tuf-gaming-k1-rgb-keyboard-with-volume-knob-19-key-rollover-side-light-bar-armoury-crate-spill-resistant-detachable-wrist-rest",
-            "{{URL_3}}/product/asus-tuf-gaming-k1-rgb-keyboard-with-volume-knob-19-key-rollover-side-light-bar-armoury-crate-spill-resistant-detachable-wrist-rest"
+            "{{URL_3}}/product/marvo-k606-gaming-keyboard-with-palm-rest"
           ],
           "product_in_cart": "{{URL_1}}/product/asus-rog-strix-scope-ii-nx-snow-mechanical-rgb-gaming-keyboard-rog-nx-snow-linear-switches-sound-dampening-pbt-keycaps-intuitive-controls"
         }
