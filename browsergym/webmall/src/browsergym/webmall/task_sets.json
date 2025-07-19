@@ -5419,7 +5419,11 @@
             "{{URL_4}}/product/asus-proart-rtx4070-ti-super-oc-16gb-ddr6x-hdmi-3-dp-2670mhz-clock-overlocked-compact-2-5-slot",
             "{{URL_3}}/product/palit-rtx4080-super-jetstream-oc-pcie4-16gb-ddr6x-hdmi-3-dp-2580mhz-clock-overclocked",
             "{{URL_4}}/product/palit-rtx4080-super-gamingpro-oc-pcie4-16gb-ddr6x-hdmi-3-dp-2610mhz-clock-rgb-lighting-overclocked",
-            "{{URL_1}}/product/palit-rtx4080-super-gamingpro-pcie4-16gb-ddr6x-hdmi-3-dp-2550mhz-clock-rgb-lighting"
+            "{{URL_1}}/product/palit-rtx4080-super-gamingpro-pcie4-16gb-ddr6x-hdmi-3-dp-2550mhz-clock-rgb-lighting",
+            "{{URL_1}}/product/nvidia-asus-geforce-rtx-4080-republic-of-gamers-strix-graphics-card",
+            "{{URL_1}}/product/nvidia-asus-geforce-rtx-4080-republic-of-gamers-strix-oc-graphics-card",
+            "{{URL_2}}/product/zotac-gaming-geforce-rtx-4080-16gb-amp-extreme-airo-zt-d40810b-10p",
+            "{{URL_4}}/product/asus-geforce-rtx4080-super-tuf-gaming-16gb-gddr6x"
           ]
         }
       },
@@ -8599,7 +8603,8 @@
           "answers": [
             "{{URL_4}}/product/asus-rog-falchion-rx-low-profile-compact-65-mechanical-rgb-gaming-keyboard-wireless-usb-rog-rx-red-switches-per-key-rgb-lighting-touch-panel-430-hour-battery-life",
             "{{URL_1}}/product/asus-rog-falchion-rx-low-profile-compact-65-mechanical-rgb-gaming-keyboard-wireless-usb-rog-rx-red-switches-per-key-rgb-lighting-touch-panel-430-hour-battery-life",
-            "{{URL_3}}/product/apple-wireless-keyboard-mc184ll-a"
+            "{{URL_3}}/product/apple-wireless-keyboard-mc184ll-a",
+            "{{URL_3}}/product/asus-rog-falchion-nx-red-compact-65-mechanical-rgb-gaming-keyboard-wireless-usb-rog-nx-red-switches-per-key-rgb-lighting-touch-panel-450-hour-battery-life"
           ]
         }
       }
@@ -8621,7 +8626,7 @@
         "id": "Webmall_Cheapest_Best_Fit_Specific_Task1",
         "category": "Cheapest_Best_Fit_Specific",
         "instruction": "<instructions>\\nSolve the task below using these four webshops:\\n\\nE-Store Athletes: {{URL_1}}\\nTechTalk: {{URL_2}}\\nCamelCases: {{URL_3}}\\nHardware Cafe: {{URL_4}}\\n\\nAfter solving the task, submit the final result by first navigating to this page:\\n\\nSolution page: {{URL_5}}\\n\\nThen fill the final results into the text field on the solution page and press the \"Submit Final Result\" button.\\n\\nIf the result is one or more product offers enter their exact full URL(s) into the text field separated by three ### characters.\\nExample submission:\\nOffer1: {{URL_1}}/product/tp-link-ha100-bluetooth-nfc-music-receiver-provides-wireless-connectivity-to-your-stereo/###Offer2: {{URL_3}}/product/spire-usb-2-0-type-a-cable-male-to-male-1-metre/###Offer3: {{URL_2}}/product/sandberg-usb-c-pd-to-lightning-cable-braided-1-meter-white/\\n\\nIf the result is any other kind of value(s), input the value(s) into the text field.\\n\\nIf there is no result to return after completion of the task, simply enter \"Done\" into the text field.\\n\\nDo not forget to press the \"Submit Final Result\" button in all cases!\\n</instructions>\\n\\n",
-        "task": "<task>\\nFind the cheapest offer for a Xbox gaming console with at least 512gb disk space in white. If multiple offers share the lowest price, return all of them.\\n</task>",
+        "task": "<task>\\nFind the cheapest offer for a new Xbox gaming console with at least 512gb disk space in white. If multiple offers share the lowest price, return all of them.\\n</task>",
         "motivation": "Test the agent's ability to balance feature requirements and price considerations.",
         "relevant_offers": {
           "shop1": [],
@@ -11170,15 +11175,14 @@
         "correct_answer": {
           "type": "string",
           "answers": [
-            "{{URL_1}}/product/asus-dual-rtx4060-evo-oc-pcie4-8gb-ddr6-hdmi-3-dp-2535mhz-clock-overclocked",
-            "{{URL_3}}/product/asus-dual-rtx4060-ti-evo-oc-pcie4-8gb-ddr6-hdmi-3-dp-2595mhz-clock-overclocked",
-            "{{URL_4}}/product/asus-dual-rtx4060-ti-evo-oc-pcie4-8gb-ddr6-hdmi-3-dp-2595mhz-clock-overclocked",
+            "{{URL_4}}/product/asus-dual-rtx4060-evo-oc-pcie4-8gb-ddr6-hdmi-3-dp-2535mhz-clock-overclocked",
             "{{URL_3}}/product/palit-rtx4070-super-dual-oc-12gb-ddr6x-hdmi-3-dp-2550mhz-clock-overclocked-rgb-lighting",
             "{{URL_1}}/product/palit-rtx4070-super-dual-oc-12gb-ddr6x-hdmi-3-dp-2550mhz-clock-overclocked-rgb-lighting",
             "{{URL_3}}/product/palit-rtx4070-gamingpro-pcie4-12gb-ddr6x-hdmi-3-dp-2475mhz-clock-rgb-lighting",
             "{{URL_3}}/product/asus-dual-rtx4070-super-oc-white-pcie4-12gb-ddr6x-hdmi-3-dp-2550mhz-clock-overclocked",
             "{{URL_3}}/product/asus-dual-rtx4070-super-pcie4-12gb-ddr6x-hdmi-3-dp-2505mhz-clock",
             "{{URL_3}}/product/asus-proart-rtx4070-super-oc-pcie4-12gb-ddr6x-hdmi-3-dp-2565mhz-clock-overclocked-compact-2-5-slot-design",
+            "{{URL_3}}/product/palit-rtx4070-super-dual-12gb-ddr6x-hdmi-3-dp-2475mhz-clock-rgb-lighting",
             "{{URL_1}}/product/asus-proart-rtx4070-super-oc-12gb-ddr6x-hdmi-3-dp-2565mhz-clock-overclocked-compact-2-5-slot-design",
             "{{URL_4}}/product/palit-rtx4070-super-jetstream-oc-12gb-ddr6x-hdmi-3-dp-2640mhz-clock-overclocked"
           ]
