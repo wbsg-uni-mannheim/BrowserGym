@@ -71,8 +71,8 @@ class WebMallTask(AbstractBrowserTask):
                 replacements.append(("{{expiry_date}}", payment_info.get("expiry_date", "")))
 
         # For checkout tasks only, inject product url
-        if self.task_config["category"] == "Checkout":
-            replacements.append(("{{product_url}}", self.task_config["correct_answer"]["answers"][0]))
+        #if self.task_config["category"] == "Checkout":
+        #    replacements.append(("{{product_url}}", self.task_config["correct_answer"]["answers"][0]))
 
         self.task_config = _replace_placeholders(self.task_config, replacements)
 
