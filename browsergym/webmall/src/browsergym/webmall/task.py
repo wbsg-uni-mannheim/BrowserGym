@@ -63,6 +63,7 @@ class WebMallTask(AbstractBrowserTask):
                 replacements.append(("{{street}}", user_details.get("street", "")))
                 replacements.append(("{{house_number}}", user_details.get("house_number", "")))
                 replacements.append(("{{zip}}", user_details.get("zip", "")))
+                replacements.append(("{{city}}", user_details.get("city", "")))
                 replacements.append(("{{state}}", user_details.get("state", "")))
                 replacements.append(("{{country}}", user_details.get("country", "")))
             if payment_info:
