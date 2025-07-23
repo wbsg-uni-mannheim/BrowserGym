@@ -1058,7 +1058,7 @@
   },
   {
     "id": "WEBMALL_FIND_COMPATIBLE_PRODUCTS_V1",
-    "name": "Web Mall Agent Benchmark: Find most fitting Products for a given Product (compatible Products)",
+    "name": "Web Mall Agent Benchmark: Find most fitting Products for a given Product (compatible products)",
     "date": "2025-02-21",
     "description": "Test the agent’s ability to find compatible products.",
     "authors": [
@@ -1151,7 +1151,7 @@
   },
   {
     "id": "WEBMALL_SUBSTITUTES_V1",
-    "name": "Web Mall Agent Benchmark: Find alternative Products for a given Product (substitutes)",
+    "name": "Web Mall Agent Benchmark: Find alternative Products for a given Product (substitute products)",
     "date": "2025-02-21",
     "description": "Evaluate the agent’s ability to find similar and cheaper items from all shops.",
     "authors": [
