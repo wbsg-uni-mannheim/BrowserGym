@@ -3,7 +3,7 @@ import csv
 
 # Replace these paths with your actual file paths
 json_path = 'task_sets.json'
-csv_path = '/Users/luca/Desktop/LLM Benchmark Project/WebMall/BrowserGym/browsergym/experiments/src/browsergym/experiments/benchmark/metadata/webmall.csv'
+csv_path = '../experiments/src/browsergym/experiments/benchmark/metadata/webmall.csv'
 
 # Fixed values for the CSV
 requires_reset = 'False'
@@ -40,6 +40,7 @@ with open(csv_path, 'w', newline='') as f:
                 browsergym_split,
                 depends_on
             ]
+            print(row)
             writer.writerow(row)
 
 print(f"CSV file has been created at {csv_path}")
